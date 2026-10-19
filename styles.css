@@ -1,0 +1,316 @@
+:root{--navy:#063c79;--blue:#07518e;--teal:#169f9b;--mint:#eaf8f7;--pale:#f3fbfc;--ink:#163b5d;--muted:#5f7485;--line:#d8e8ed;--white:#fff;--radius:18px;--shadow:0 8px 24px #0a477b12}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Poppins",Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.55}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.container{width:min(1180px,92%);margin:auto}.eyebrow{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);font-weight:800}.section{padding:58px 0}.section h2{font-size:clamp(1.65rem,3vw,2.5rem);line-height:1.08;margin:7px 0 14px;color:var(--navy);letter-spacing:-.035em}.lead{color:var(--muted);max-width:650px;font-size:.96rem}.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 19px;border-radius:999px;background:var(--navy);color:#fff;font-size:.83rem;font-weight:700;border:1px solid var(--navy);transition:.2s}.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}.btn.outline{background:#fff;color:var(--navy)}.btn.teal{background:var(--teal);border-color:var(--teal)}.pill{border-radius:999px;background:#e7f8f6;color:var(--teal);padding:7px 11px;font-size:.72rem;font-weight:700;display:inline-block}
+header{position:sticky;top:0;z-index:20;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid #e6eef2}.topbar{background:#07366e;color:#fff;font-size:.72rem;letter-spacing:.025em}.topbar-inner{min-height:32px;display:flex;align-items:center;justify-content:flex-end;gap:25px}.topbar-item{display:inline-flex;align-items:center;gap:7px;white-space:nowrap}.topbar-item a{color:#fff}.topbar-item a:hover{text-decoration:underline}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--navy);line-height:1.05}.brand-mark{height:39px;width:39px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#19b4aa,#0861a0);color:white;font-size:1.25rem}.brand-logo{width:42px;height:42px;object-fit:contain;flex:0 0 42px}.brand small{display:block;font-size:.65rem;color:var(--teal);letter-spacing:.12em;margin-top:4px}.navlinks{display:flex;align-items:center;gap:23px;font-size:.78rem;font-weight:700;color:#536c7e}.navlinks a:hover{color:var(--teal)}.nav-cta{font-size:.76rem;padding:10px 15px}.menu{display:none;background:none;border:0;color:var(--navy);font-size:1.6rem}
+.hero{background:#edf8fa url('assets/hero-banner.webp') center/cover no-repeat;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;min-height:440px;align-items:center;gap:28px}.hero-copy{padding:52px 0}.hero h1{font-size:clamp(2.25rem,4.5vw,4rem);line-height:.98;letter-spacing:-.05em;color:var(--navy);margin:14px 0 20px;max-width:650px}.hero h1 span{color:var(--teal)}.hero-copy p{max-width:530px;color:#5e7485;font-size:1rem}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0}.hero-tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:24px}.hero-art{display:none}.kidney-illustration{width:min(100%,510px);aspect-ratio:1.15;display:grid;place-items:center;position:relative}.kidney-illustration:before{content:"";position:absolute;width:85%;height:85%;border-radius:50%;background:radial-gradient(circle,#fff 0%,#c8eeee 52%,#b1dfe7 70%,transparent 71%)}.kidney-illustration svg{width:100%;height:auto;position:relative;filter:drop-shadow(0 15px 18px #12557722)}.float-card{position:absolute;right:2%;bottom:10%;padding:14px 18px;background:#fff;border-radius:14px;box-shadow:var(--shadow);font-size:.8rem;font-weight:800}.float-card span{display:block;color:var(--teal);font-size:.7rem;font-weight:600}
+.trust-strip{background:white;position:relative;margin-top:-1px}.trust-items{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:22px 0}.trust-item{display:flex;align-items:center;gap:12px;padding:10px 14px;border-right:1px solid var(--line)}.trust-item:last-child{border:0}.icon{width:42px;height:42px;flex:0 0 42px;display:grid;place-items:center;border-radius:13px;background:#e7f7f5;color:var(--teal);font-size:1.25rem}.trust-item strong{display:block;font-size:.85rem;color:var(--navy)}.trust-item small{display:block;color:var(--muted);font-size:.7rem}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:26px}.section-head .lead{margin-bottom:0}.treatment-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.treatment-card{border:1px solid #e0edf1;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 5px 18px #0c4c7410;transition:.2s}.treatment-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.treatment-image{display:block;width:100%;height:145px;object-fit:cover;object-position:center}.treatment-body{padding:17px}.treatment-body h3{margin:0 0 6px;font-size:1rem;color:var(--navy)}.treatment-body p{margin:0 0 13px;color:var(--muted);font-size:.79rem}.text-link{color:var(--teal);font-weight:800;font-size:.78rem}.text-link span{padding-left:5px}
+.doctor{background:var(--pale) url('assets/doctor-section-bg.webp') center/cover no-repeat}.doctor-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:48px}.doctor-copy{background:#f4fbfcdf;border-radius:16px;padding:18px}.doctor-photo{border-radius:24px;overflow:hidden;min-height:330px;background:linear-gradient(140deg,#d2eeef,#9dcfd9);position:relative;display:grid;place-items:center}.doctor-photo svg{width:100%;height:100%;max-height:410px}.doctor-copy p{color:var(--muted)}.credentials{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0}.credential{padding:15px 12px;border:1px solid var(--line);border-radius:13px;background:#fff}.credential b{display:block;color:var(--teal);font-size:.85rem}.credential small{font-size:.7rem;color:var(--muted)}
+.hospital-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:stretch}.hospital-art{height:100%;min-height:410px;align-self:stretch;border-radius:22px;overflow:hidden;background:linear-gradient(130deg,#e6f5f3,#b9e0e3);display:grid;place-items:center}.hospital-art img{display:block;width:100%;height:100%;min-height:410px;object-fit:cover;object-position:center}.hospital-art svg{width:100%;height:100%}.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:23px}.feature{padding:14px;border:1px solid var(--line);border-radius:13px}.feature .icon{margin-bottom:9px}.feature strong{display:block;font-size:.84rem}.feature p{font-size:.75rem;color:var(--muted);margin:4px 0 0}
+.stats{background:#eff9fb url('assets/trust-stats-bg.webp') center/cover no-repeat}.stats-grid{display:grid;grid-template-columns:repeat(2,2fr);gap:12px;width: 50%}.stat{display:flex;align-items:center;gap:13px;padding:17px;background:#ffffffb8;border:1px solid #dceff0;border-radius:15px}.stat strong{display:block;color:var(--teal);font-size:1.5rem;line-height:1.1}.stat small{color:var(--muted);font-size:.75rem}
+.technology{background:#fff}.technology-panel{display:block;position:relative;overflow:hidden;border-radius:22px;background:var(--navy) url('assets/technology-section-bg.webp') center/cover no-repeat;color:white;min-height:300px}.technology-art{display:none}.technology-art svg{width:100%;height:100%}.technology-copy{margin-left:40%;min-height:300px;padding:35px;display:flex;flex-direction:column;justify-content:center}.technology-copy h2{color:#fff}.technology-copy p{color:#d2e7f3}.technology-copy .eyebrow{color:#75e0d5}.technology-copy .btn{margin-top:10px}.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}.why-card{padding:20px;border:1px solid var(--line);border-radius:15px;background:#fff}.why-card .icon{margin-bottom:13px}.why-card strong{display:block;color:var(--navy)}.why-card p{font-size:.78rem;color:var(--muted);margin:6px 0 0}
+.testimonials{background:#effafa url('assets/testimonials-section-bg.webp') center/cover no-repeat}.testimonials .container{background:#effafaaf;border-radius:18px;padding:18px}.testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.quote{background:#fff;border:1px solid #e0eff0;border-radius:17px;padding:23px;box-shadow:0 6px 18px #0b56720b}.quote-mark{font-size:2.3rem;color:#77cfd0;line-height:1}.stars{color:#f5b400;letter-spacing:2px;font-size:.9rem;margin:8px 0;border-bottom:1px solid #e2ecef;padding-bottom:10px}.quote p{font-size:.85rem;color:#5b7181}.patient{display:flex;align-items:center;gap:10px;margin-top:18px}.avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#c7ece8,#83c5d0);display:grid;place-items:center;font-weight:800;color:var(--navy)}.patient strong{display:block;font-size:.8rem}.patient small{color:var(--muted);font-size:.7rem}.center{text-align:center;margin-top:24px}
+.faq-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:45px;align-items:start}
+.faq-item{border-bottom:1px solid var(--line);padding:0}
+.faq-question{width:100%;border:0;background:transparent;padding:16px 0;display:flex;justify-content:space-between;align-items:center;gap:20px;text-align:left;color:var(--navy);font:inherit;font-weight:800;cursor:pointer}
+.faq-question:focus-visible{outline:2px solid var(--teal);outline-offset:4px;border-radius:4px}
+.faq-toggle{color:var(--teal);font-size:1.3rem;line-height:1;flex:0 0 auto;transition:transform .32s ease,color .32s ease}
+.faq-item.is-open .faq-toggle{transform:rotate(45deg);color:var(--navy)}
+.faq-answer{height:0;overflow:hidden;opacity:0;transition:height .38s cubic-bezier(.22,.61,.36,1),opacity .26s ease;will-change:height}
+.faq-answer-inner{padding:0 0 0;transform:translateY(-5px);transition:transform .38s ease}
+.faq-item.is-open .faq-answer{opacity:1}
+.faq-item.is-open .faq-answer-inner{transform:translateY(0);padding-bottom:16px}
+.faq-list p{font-size:.86rem;color:var(--muted);margin:0;line-height:1.7}
+@media(prefers-reduced-motion:reduce){.faq-answer,.faq-toggle,.faq-answer-inner{transition:none!important}}
+.cta-band{background:#07366e url('assets/consultation-cta-bg.webp') left center/cover no-repeat;color:white;overflow:hidden;min-height:250px}.cta-copy{background:transparent;border-radius:0;padding:38px 0}.cta-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:48px;min-height:250px}.cta-copy{grid-column:2;max-width:600px;margin-left:auto;width:100%}.cta-art{display:none}.cta-art svg{width:100%;height:100%}.cta-band h2{color:white}.cta-band p{color:#d2e7f4}.cta-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.cta-band .btn.outline{border-color:white}.cta-band .btn.outline:hover{background:#fff;color:var(--navy)}
+footer{background:#fff;border-top:1px solid var(--line);padding:36px 0 18px}.footer-grid{display:grid;grid-template-columns:1.2fr .8fr 1fr 1.1fr;gap:28px}.footer-grid h4{font-size:.83rem;margin:0 0 12px;color:var(--navy)}.footer-grid p,.footer-grid a{font-size:.75rem;color:var(--muted)}.footer-grid a{display:block;margin:7px 0}.footer-grid a:hover{color:var(--teal)}.footer-bottom{border-top:1px solid var(--line);margin-top:25px;padding-top:15px;display:flex;justify-content:space-between;gap:15px;color:var(--muted);font-size:.7rem}.map-placeholder{height:100px;border-radius:12px;background:linear-gradient(135deg,#e5f1eb,#d6e6e7);display:grid;place-items:center;color:var(--teal);font-size:2rem}
+@media(max-width:950px){.navlinks{gap:12px}.navlinks a{font-size:.7rem}.nav-cta{display:none}.treatment-grid{grid-template-columns:repeat(2,1fr)}.hero-grid{min-height:380px}.trust-items{grid-template-columns:repeat(2,1fr)}.trust-item:nth-child(2){border-right:0}.stats-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.section{padding:43px 0}.topbar-inner{justify-content:center;gap:7px 15px;flex-wrap:wrap;padding:7px 0;font-size:.65rem}.topbar-item:last-child{white-space:normal;text-align:center}.nav{height:66px}.menu{display:block}.navlinks{display:none;position:absolute;left:0;right:0;top:65px;background:#fff;padding:18px 5%;border-bottom:1px solid var(--line);box-shadow:var(--shadow);flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.navlinks a{font-size:.9rem;padding:6px 0}.hero{background-position:58% center}.hero-grid{grid-template-columns:1fr;gap:0}.hero-copy{padding:43px 0 5px;background:linear-gradient(90deg,#f0fafb 0%,#f0fafbe8 70%,#f0fafb00 100%)}.hero h1{font-size:2.65rem}.hero-art{min-height:255px}.kidney-illustration{max-width:360px}.float-card{bottom:3%;right:3%}.trust-items{padding:15px 0}.trust-item{padding:8px 3px;border:0}.trust-item strong{font-size:.75rem}.trust-item small{font-size:.66rem}.section-head{align-items:start;flex-direction:column}.treatment-grid{gap:11px}.treatment-image{height:120px}.treatment-body{padding:13px}.treatment-body h3{font-size:.9rem}.treatment-body p{font-size:.73rem}.doctor-grid,.hospital-grid,.technology-panel,.faq-grid,.cta-grid{grid-template-columns:1fr;gap:25px}.doctor-photo{min-height:260px;order:2}.credentials{grid-template-columns:repeat(3,1fr)}.credential{padding:11px 8px}.credential small{font-size:.64rem}.hospital-art{height:260px;min-height:260px}.hospital-art img{height:260px;min-height:260px}.feature-list{gap:10px}.feature{padding:12px}.technology-art{min-height:190px}.technology-panel{min-height:0;background-position:30% center}.technology-copy{margin-left:0;min-height:0;padding:25px;background:#07366ee8}.cta-copy{grid-column:1}.why-grid{grid-template-columns:repeat(2,1fr);gap:10px}.why-card{padding:14px}.testimonial-grid{grid-template-columns:1fr}.quote{padding:19px}.faq-grid{gap:12px}.cta-art{height:145px}.footer-grid{grid-template-columns:1fr 1fr;gap:23px}.footer-bottom{flex-direction:column}.trust-item .icon{width:34px;height:34px;flex-basis:34px}.stats-grid{gap:9px}.stat{padding:13px 10px;gap:9px}.stat strong{font-size:1.2rem}.stat .icon{width:34px;height:34px;flex-basis:34px}}
+@media(max-width:390px){.treatment-grid{grid-template-columns:1fr}.treatment-image{height:150px}.why-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.hero h1{font-size:2.3rem}}
+
+/* Reference-match refinements */
+@media(min-width:681px){
+  .cta-band{min-height:370px}
+  .cta-grid{min-height:370px}
+  .doctor-photo{background:transparent;border-radius:0;min-height:300px;box-shadow:none}
+  .technology-panel{background-position:center;background-size:cover}
+  .technology-copy{width:60%;margin-left:40%;padding:30px 34px 30px 26px}
+  .cta-grid{grid-template-columns:.7fr 1.3fr}
+  .cta-copy{grid-column:2;background:transparent;padding:28px 0}
+  .trust-items{padding-top:17px;padding-bottom:17px}
+  .section{padding-top:48px;padding-bottom:48px}
+  .treatment-image{height:135px}
+}
+@media(max-width:680px){
+  .doctor-photo{background:transparent;border-radius:0;min-height:180px;box-shadow:none}
+  .technology-copy{width:auto}
+  .cta-band{background-position:24% center;min-height:0}
+  .cta-grid{grid-template-columns:1fr;min-height:0;gap:0;padding-top:24px;padding-bottom:28px}
+  .cta-copy{grid-column:1;margin:0 0 0 auto;width:min(100%,540px);padding:24px;background:#07366edb;border-radius:14px}
+}
+
+
+/* Desktop scale refinement: make the layout feel correctly sized at 100% browser zoom.
+   Mobile/tablet sizing remains governed by the existing responsive breakpoints. */
+@media (min-width: 1200px) {
+  .container { width: min(1420px, 92%); }
+  body { font-size: 17px; }
+  .nav { height: 88px; }
+  .brand-logo { width: 46px; height: 46px; }
+  .navlinks { gap: 28px; }
+  .navlinks a { font-size: .86rem; }
+  .nav-cta { padding: 13px 22px; font-size: .84rem; }
+  .section { padding-top: 68px; padding-bottom: 68px; }
+  .section h2 { font-size: clamp(2rem, 2.8vw, 2.8rem); }
+  .hero-grid { min-height: 500px; gap: 34px; }
+  .hero-copy { padding-top: 60px; padding-bottom: 60px; }
+  .hero h1 { font-size: clamp(3rem, 4.4vw, 4.5rem); max-width: 720px; }
+  .hero-copy p { font-size: 1.06rem; max-width: 610px; }
+  .hero-actions { gap: 13px; margin-top: 26px; }
+  .btn { padding: 14px 23px; font-size: .9rem; }
+  .trust-items { padding-top: 22px; padding-bottom: 22px; }
+  .trust-item { padding-left: 18px; padding-right: 18px; }
+  .treatment-grid { gap: 20px; }
+  .treatment-image { height: 175px; }
+  .treatment-body { padding: 18px 19px 20px; }
+  .treatment-body h3 { font-size: 1.06rem; }
+  .treatment-body p { font-size: .84rem; }
+  .doctor-grid, .hospital-grid { gap: 52px; }
+  .testimonial-grid { gap: 20px; }
+  .quote { padding: 26px; }
+  .faq-list summary { font-size: .94rem; }
+  .faq-answer-inner { font-size: .9rem; }
+  .footer-grid { gap: 38px; }
+}
+
+
+/* PDF comparison pass: align the specialist highlights, technology/benefits split,
+   patient portraits and location map to the supplied one-page reference. */
+@media (min-width: 951px) {
+  .doctor { padding-top: 42px; padding-bottom: 42px; background-position: center; }
+  .doctor-grid { grid-template-columns: minmax(0, .92fr) minmax(260px, .78fr); gap: 42px; }
+  .doctor-copy { max-width: 570px; padding: 20px 24px; }
+  .doctor-photo { min-height: 310px; display:flex; align-items:center; justify-content:flex-end; }
+  .doctor-highlights { width: min(330px, 92%); padding: 20px 22px; display:flex; flex-direction:column; gap:18px; border:1px solid #ffffffc9; border-radius:18px; background:#ffffffdf; box-shadow:0 10px 32px #16476c12; backdrop-filter:blur(8px); }
+  .doctor-highlight { display:flex; align-items:center; gap:14px; color:var(--navy); font-size:.92rem; line-height:1.35; font-weight:800; }
+  .doctor-highlight .icon { border-radius:50%; width:48px; height:48px; flex-basis:48px; font-size:1.3rem; }
+  .technology .container { display:grid; grid-template-columns:minmax(0, .94fr) minmax(0, 1.06fr); align-items:center; gap:18px 28px; }
+  .technology-panel { grid-column:1; grid-row:1 / span 2; min-height:290px; border-radius:18px; }
+  .technology-copy { min-height:290px; padding:28px 26px 28px 24px; margin-left:40%; }
+  .technology .section-head { grid-column:2; margin:0 !important; align-self:end; }
+  .technology .section-head h2 { font-size:clamp(1.65rem, 2vw, 2.2rem); margin-bottom:0; }
+  .why-grid { grid-column:2; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-top:0; align-self:start; }
+  .why-card { min-height:108px; padding:14px; border-radius:12px; }
+  .why-card .icon { width:34px; height:34px; flex-basis:34px; margin-bottom:8px; }
+  .why-card strong { font-size:.82rem; }
+  .why-card p { font-size:.72rem; line-height:1.4; }
+  .avatar { overflow:hidden; padding:0; }
+  .avatar img { display:block; width:100%; height:100%; object-fit:cover; }
+  .map-placeholder { display:block; overflow:hidden; height:100px; }
+  .map-placeholder img { width:100%; height:100%; display:block; object-fit:cover; }
+}
+@media (max-width: 950px) {
+  .doctor-highlights { display:flex; flex-direction:column; gap:10px; width:min(100%, 430px); padding:16px; background:#ffffffdf; border-radius:14px; }
+  .doctor-highlight { display:flex; align-items:center; gap:10px; font-size:.82rem; font-weight:800; color:var(--navy); }
+  .doctor-highlight .icon { width:36px; height:36px; flex-basis:36px; }
+  .technology .container { display:block; }
+  .technology .section-head { margin-top:28px !important; }
+  .why-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .avatar img { display:block; width:100%; height:100%; object-fit:cover; }
+  .map-placeholder { display:block; overflow:hidden; }
+  .map-placeholder img { width:100%; height:100%; display:block; object-fit:cover; }
+}
+@media (max-width: 680px) {
+  .doctor-photo { justify-content:center; min-height:210px; }
+  .doctor-highlights { width:100%; }
+  .technology .section-head { margin-top:26px !important; }
+  .why-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+
+
+/* Testimonial background visibility fix: keep the full-width artwork unobstructed. */
+.testimonials {
+  background-color: #effafa;
+  background-image: url('assets/testimonials-section-bg.webp');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.testimonials .container {
+  background: transparent;
+  border-radius: 0;
+  padding: 18px 0;
+}
+.testimonial-grid .quote {
+  background: rgba(255,255,255,.96);
+}
+@media (max-width: 950px) {
+  .testimonials {
+    background-size: cover;
+    background-position: 62% center;
+  }
+  .testimonials .container { padding: 18px 0; }
+}
+@media (max-width: 680px) {
+  .testimonials {
+    background-size: auto 100%;
+    background-position: 70% center;
+  }
+}
+
+/* Technology + benefits section: compact, balanced two-column layout to match PDF. */
+@media (min-width: 951px) {
+  .technology.section { padding-top: 46px; padding-bottom: 46px; }
+  .technology .container {
+    grid-template-columns: minmax(0, .94fr) minmax(0, 1.06fr);
+    grid-template-rows: auto auto;
+    align-items: center;
+    column-gap: 28px;
+    row-gap: 14px;
+  }
+  .technology-panel {
+    min-height: 270px;
+    height: 270px;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    border-radius: 16px;
+    background-position: center;
+    background-size: cover;
+  }
+  .technology-copy {
+    width: 60%;
+    min-height: 270px;
+    margin-left: 35%;
+    padding: 22px 24px 22px 22px;
+    justify-content: center;
+  }
+  .technology-copy .eyebrow { font-size: .66rem; letter-spacing: .13em; line-height: 1.35; }
+  .technology-copy h2 {
+    font-size: clamp(1.45rem, 1.65vw, 1.85rem);
+    line-height: 1.08;
+    letter-spacing: -.025em;
+    margin: 7px 0 10px;
+  }
+  .technology-copy p { font-size: .82rem; line-height: 1.48; margin: 5px 0 8px; }
+  .technology-copy .btn { align-self: stretch; justify-content: center; padding: 10px 14px; font-size: .76rem; margin-top: 8px; }
+  .technology .section-head { grid-column: 2; grid-row: 1; align-self: end; margin: 0 !important; }
+  .technology .section-head h2 { font-size: clamp(1.55rem, 1.8vw, 2rem); line-height: 1.12; margin: 5px 0 0; }
+  .why-grid { grid-column: 2; grid-row: 2; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 0; align-self: start; }
+  .why-card { min-height: 96px; padding: 12px 13px; border-radius: 11px; }
+  .why-card .icon { width: 32px; height: 32px; flex-basis: 32px; margin-bottom: 6px; font-size: 1rem; border-radius: 10px; }
+  .why-card strong { font-size: .76rem; line-height: 1.3; }
+  .why-card p { font-size: .68rem; line-height: 1.35; margin-top: 5px; }
+}
+@media (min-width: 951px) and (max-width: 1199px) {
+  .technology-panel, .technology-copy { min-height: 250px; height: 250px; }
+  .technology-copy { padding: 18px; }
+  .technology-copy h2 { font-size: 1.4rem; }
+  .technology-copy p { font-size: .76rem; }
+}
+@media (max-width: 950px) {
+  .technology-panel { height: auto; min-height: 270px; }
+  .technology-copy { min-height: 270px; }
+}
+
+
+/* Latest requested sizing adjustments */
+@media (min-width: 681px) {
+  .hero-grid { min-height: 570px; }
+  .hero-copy { padding-top: 66px; padding-bottom: 66px; }
+}
+.treatment-image { height: 200px; object-fit: cover; object-position: center; }
+@media (max-width: 680px) {
+  .hero-grid { min-height: 0; }
+  .hero-copy { padding-top: 43px; padding-bottom: 5px; }
+  .treatment-image { height: 200px; }
+}
+
+
+
+/* Final page-proportion pass: consistent section rhythm and aligned desktop columns. */
+@media (min-width: 1200px) {
+  .section { padding-top: 62px; padding-bottom: 62px; }
+  .hero-grid { min-height: 670px; align-items: center; }
+  .hero-copy { padding-top: 58px; padding-bottom: 58px; }
+  #treatments .section-head { margin-bottom: 28px; }
+  .treatment-grid { align-items: stretch; }
+  .treatment-card { height: 100%; display: flex; flex-direction: column; }
+  .treatment-image { height: 200px; flex: 0 0 200px; }
+  .treatment-body { flex: 1; display: flex; flex-direction: column; align-items: flex-start; }
+  .treatment-body .text-link { margin-top: auto; }
+  .doctor.section { min-height: 420px; display: flex; align-items: center; }
+  .doctor-grid { width: min(1420px, 92%); margin-inline: auto; }
+  #hospital.section { min-height: 430px; display: flex; align-items: center; }
+  .hospital-grid { width: min(1420px, 92%); margin-inline: auto; align-items: center; }
+  .hospital-art { min-height: 330px; height: 570px; overflow: hidden; border-radius: 18px; }
+  .hospital-art > img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .stats.section { min-height: 470px; display: flex; align-items: center; background-position: center; background-size: cover; }
+  .technology.section { padding-top: 62px; padding-bottom: 62px; }
+  .technology-panel, .technology-copy { min-height: 440px; height: 340px; }
+  /* .technology-copy { padding: 30px 32px 30px 26px; } */
+  .technology .container { row-gap: 16px; }
+  .technology .section-head h2 { font-size: clamp(1.8rem, 2vw, 2.3rem); }
+  .why-grid { gap: 12px; }
+  .why-card { min-height: 112px; padding: 15px; }
+  .why-card strong { font-size: .82rem; }
+  .why-card p { font-size: .74rem; }
+  .testimonials.section { min-height: 440px; display: flex; align-items: center; background-size: cover; background-position: center; }
+  .testimonials .container { width: min(1420px, 92%); }
+  #faq.section { min-height: 300px; display: flex; align-items: center; }
+  .faq-grid { width: min(1420px, 92%); margin-inline: auto; align-items: start; }
+  .cta-band { min-height: 370px; }
+  .cta-grid { min-height: 470px; }
+  footer { padding-top: 42px; }
+}
+@media (min-width: 951px) and (max-width: 1199px) {
+  .section { padding-top: 54px; padding-bottom: 54px; }
+  .hero-grid { min-height: 500px; }
+  .treatment-image { height: 180px; }
+  .technology-panel, .technology-copy { min-height: 310px; height: 310px; }
+  .why-card { min-height: 105px; }
+  .cta-band, .cta-grid { min-height: 340px; }
+}
+@media (max-width: 950px) {
+  .section { padding-top: 48px; padding-bottom: 48px; }
+  .hero-grid { min-height: 460px; }
+  .treatment-image { height: 200px; }
+  .doctor.section, #hospital.section, .stats.section, .testimonials.section, #faq.section { min-height: 0; }
+  .technology.section { padding-top: 48px; padding-bottom: 48px; }
+  .technology-panel { min-height: 300px; }
+  .technology-copy { min-height: 300px; }
+}
+@media (max-width: 680px) {
+  .section { padding-top: 40px; padding-bottom: 40px; }
+  .hero-grid { min-height: 0; }
+  .hero-copy { padding-top: 42px; padding-bottom: 12px; }
+  .treatment-image { height: 200px; }
+  .doctor.section { padding-top: 36px; padding-bottom: 36px; }
+  .technology-panel { min-height: 280px; }
+  .technology-copy { min-height: 280px; }
+  .testimonials.section { padding-top: 42px; padding-bottom: 42px; }
+  .cta-grid { padding-top: 28px; padding-bottom: 28px; }
+}
+
+
+/* Desktop doctor section: preserve the PDF's open layout and align the highlights with the portrait. */
+@media (min-width: 951px) {
+  .doctor.section { padding: 34px 0; min-height: 0; background-size: cover; background-position: center 46%;height: 610px}
+  .doctor-grid { width: min(1420px, 92%); margin-inline: auto; grid-template-columns: minmax(0, 1fr) minmax(320px, .78fr); gap: 28px; min-height: 300px; }
+  .doctor-copy { max-width: 590px; padding: 12px 0; background: transparent; border-radius: 0; }
+  .doctor-copy .eyebrow { font-size: .66rem; }
+  .doctor-copy h2 { font-size: clamp(1.75rem, 2.1vw, 2.25rem); line-height: 1.02; max-width: 520px; margin: 8px 0 12px; }
+  .doctor-copy p { max-width: 550px; margin: 0 0 14px; font-size: .88rem; line-height: 1.45; }
+  .doctor-copy .btn { margin-top: 3px; padding: 11px 19px; font-size: .78rem; }
+  .doctor-copy .credentials { display: none; }
+  .doctor-photo { min-height: 300px; height: 300px; align-items: center; justify-content: flex-end; overflow: visible; }
+  .doctor-highlights { width: min(290px, 92%); padding: 16px 18px; gap: 50px; border-radius: 14px; }
+  .doctor-highlight { gap: 11px; font-size: .82rem; }
+  .doctor-highlight .icon { width: 40px; height: 40px; flex-basis: 40px; font-size: 1.1rem; }
+}
+@media (min-width: 1200px) {
+  .doctor-grid { min-height: 320px; }
+  .doctor-photo { min-height: 320px; height: 320px; }
+}
+@media (max-width: 950px) {
+  .doctor { background-position: 58% center; }
+  .doctor-copy { background: #f4fbfcdf; border-radius: 14px; padding: 18px; }
+}
