@@ -236,7 +236,7 @@ footer{background:#fff;border-top:1px solid var(--line);padding:40px 0 20px}.foo
   .treatment-image { height: 200px; flex: 0 0 200px; }
   .treatment-body { flex: 1; display: flex; flex-direction: column; align-items: flex-start; }
   .treatment-body .text-link { margin-top: auto; }
-  .doctor.section { min-height: 420px; display: flex; align-items: center; }
+  .doctor.section { min-height: 520px; display: flex; align-items: center; }
   .doctor-grid { width: min(1420px, 92%); margin-inline: auto; }
   #hospital.section { min-height: 430px; display: flex; align-items: center; }
   .hospital-grid { width: min(1420px, 92%); margin-inline: auto; align-items: center; }
