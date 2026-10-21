@@ -1,0 +1,532 @@
+/* Service page only: styles are scoped so the existing homepage remains untouched. */
+.service-nav-active{color:var(--teal)!important}
+.service-page{overflow:hidden;background:#fff;color:#14395d}
+.service-page .service-hero{position:relative;isolation:isolate;min-height:665px;color:#fff;background:#052d61;overflow:hidden}
+.service-page .service-hero-bg{position:absolute;inset:0;z-index:-2;background-image:url("assets/service-hero-kidney-stones.webp");background-position:right center;background-size:auto 100%;background-repeat:no-repeat}
+.service-page .service-hero:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(2,35,77,.28) 0%,rgba(2,35,77,.14) 43%,transparent 72%)}
+.service-page .service-hero-inner{position:relative;min-height:665px;display:flex;flex-direction:column;padding-top:42px;padding-bottom:35px}
+.service-page .service-breadcrumb{display:flex;align-items:center;gap:7px;color:#c3e8f5;font-size:13px;line-height:1.3;margin-bottom:28px}
+.service-page .service-breadcrumb a{color:#5de3e5}.service-page .service-breadcrumb a:hover{text-decoration:underline}
+.service-page .service-kicker{display:block;color:#37e1e1;font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-bottom:12px}
+.service-page .service-hero-copy{max-width:470px}
+.service-page .service-hero h1{font-size:clamp(2.15rem,3.25vw,3.15rem);line-height:1.03;letter-spacing:-.04em;color:#fff;margin:0 0 12px;max-width:540px}
+.service-page .service-hero h1 span{color:#05e0e4}
+.service-page .service-hero-copy p{font-size:18px;line-height:1.48;color:#e0edf9;max-width:450px;margin:0}
+.service-page .service-hero-button{background:#6637e8;border-color:#6637e8;margin-top:28px;padding:15px 28px;font-size:15px;font-weight:600;box-shadow:none}
+.service-page .service-hero-button:hover{background:#7448f0;transform:translateY(-1px)}
+.service-page .service-benefits{display:grid;grid-template-columns:repeat(4,max-content);gap:34px;align-items:center;margin-top:auto;padding-top:38px;max-width:900px}
+.service-page .service-benefit{display:flex;align-items:center;gap:9px;color:#fff;font-size:14px;line-height:1.3;min-width:0}
+.service-page .benefit-icon{display:grid;place-items:center;width:38px;height:38px;flex:0 0 38px;color:#00e3e8}
+.service-page .benefit-icon svg{width:38px;height:38px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.service-page .service-band{position:relative}
+.service-page .service-overview{background:#eef9fc;border-bottom:1px solid #dcecf1;padding:56px 0 60px}
+.service-page .overview-grid{display:grid;grid-template-columns:1.2fr .9fr;align-items:center;gap:38px}
+.service-page .overview-image{display:block;width:100%;height:420px;object-fit:cover;object-position:center;border-radius:8px}
+.service-page .overview-copy{padding:0 0 0 0}
+.service-page .overview-copy .eyebrow{font-size:13px;letter-spacing:.22em}
+.service-page .overview-copy h2{font-size:clamp(1.85rem,3vw,2.65rem);line-height:1.04;margin:7px 0 12px;letter-spacing:-.035em}
+.service-page .overview-copy h2 span,.service-page .symptoms-copy h2 span,.service-page .service-options h2 span,.service-page .service-journey h2 span,.service-page .faq-heading h2 span{color:#13a7b5}
+.service-page .overview-copy p{font-size:16px;line-height:1.62;color:#284c6c;margin:0;max-width:510px}
+.service-page .service-symptoms{background:#eaf7fb;padding:28px 0 0;min-height:670px;overflow:hidden}
+.service-page .symptoms-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:stretch;min-height:642px}
+.service-page .symptoms-copy{padding:48px 0 48px}
+.service-page .symptoms-copy h2{font-size:clamp(1.9rem,3vw,2.55rem);line-height:1.08;margin:0 0 8px;letter-spacing:-.035em}
+.service-page .symptoms-copy>p{font-size:15px;color:#173e63;margin:0 0 28px;line-height:1.5}
+.service-page .symptom-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:14px 18px}
+.service-page .symptom-list li{display:flex;justify-content:space-between;align-items:center;gap:8px;min-height:58px;padding:14px 18px;border-radius:9px;background:#fff;color:#0b3267;font-size:14px;line-height:1.3;font-weight:600;box-shadow:0 2px 7px rgba(13,58,100,.025)}
+.service-page .symptom-list li span{font-size:23px;color:#05a8bd;line-height:1;flex-shrink:0}
+.service-page .symptoms-image{align-self:stretch;display:block;width:100%;height:100%;min-height:670px;max-height:700px;object-fit:cover;object-position:77% center;margin:0}
+.service-page .service-diagnosis{background:radial-gradient(ellipse at 50% 0%,#0a4b86 0%,#07366e 68%);padding:58px 0 68px;text-align:center;color:#fff}
+.service-page .diagnosis-inner>.eyebrow{color:#46dbe0;font-size:13px;letter-spacing:.22em}
+.service-page .service-diagnosis h2{color:#fff;font-size:clamp(1.8rem,3vw,2.55rem);line-height:1.1;margin:7px 0 9px;letter-spacing:-.035em}
+.service-page .service-diagnosis h2 span{color:#16c4d0}
+.service-page .diagnosis-lead{color:#e1edf8;font-size:15px;line-height:1.55;margin:0 auto;max-width:680px}
+.service-page .diagnosis-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;max-width:1000px;margin:42px auto 0}
+.service-page .diagnosis-card{background:#fff;border-radius:10px;min-height:220px;padding:16px 20px 22px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;box-shadow:0 4px 14px rgba(0,20,60,.12)}
+.service-page .diagnosis-card img{display:block;width:130px;height:120px;object-fit:contain;mix-blend-mode:multiply;margin:0 auto 2px}
+.service-page .diagnosis-card h3{font-size:17px;line-height:1.22;color:#0b356b;margin:0;text-align:center;letter-spacing:-.015em}
+.service-page .service-options{background:#fff;padding:62px 0 64px}
+.service-page .service-options h2{font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.1;margin:0 0 7px;letter-spacing:-.035em}
+.service-page .options-lead{font-size:15px;color:#36556f;margin:0 0 44px}
+.service-page .treatment-options{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.service-page .treatment-options a{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:76px;padding:18px 28px;border-radius:999px;background:#07366e;color:#fff;font-size:15px;font-weight:600;box-shadow:0 3px 8px #082e5c22;transition:background .2s,transform .2s}
+.service-page .treatment-options a span{font-size:18px;color:#00d7df;line-height:1}
+.service-page .treatment-options a:hover{background:#0a4b8a;transform:translateY(-2px)}
+.service-page .service-journey{background:#eaf7fb;padding:54px 0 62px}
+.service-page .service-journey h2{font-size:clamp(1.75rem,3vw,2.45rem);margin:0 0 6px;line-height:1.1;letter-spacing:-.035em}
+.service-page .journey-lead{font-size:17px;color:#536e86;margin:0 0 32px}
+.service-page .journey-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.service-page .journey-card{display:grid;grid-template-columns:58px 1fr;gap:18px;align-items:start;min-height:170px;padding:28px 32px;background:#fff;border-radius:14px}
+.service-page .journey-number{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:#07366e;color:#fff;font-size:23px;font-weight:700}
+.service-page .journey-number.teal{background:#18a9b5}
+.service-page .journey-card h3{font-size:23px;line-height:1.25;margin:8px 0 15px;color:#0b356b;letter-spacing:-.02em}
+.service-page .journey-card ul{margin:0;padding-left:18px;color:#516d85;font-size:17px;line-height:1.65}
+.service-page .journey-card li::marker{color:#13aab8}
+.service-page .service-faq{background:#eaf7fb;padding:50px 0 62px;border-top:1px solid #dcecf1}
+.service-page .faq-heading{margin:0 0 14px}
+.service-page .faq-heading .eyebrow{font-size:13px;letter-spacing:.19em}
+.service-page .faq-heading h2{font-size:clamp(1.7rem,2.7vw,2.3rem);margin:4px 0 0;line-height:1.08;letter-spacing:-.035em}
+.service-page .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px;align-items:start}
+.service-page .service-faq-item{background:#fff;border:1px solid #e0edf3;border-radius:8px;overflow:hidden;box-shadow:0 2px 7px #0b477b05}
+.service-page .service-faq-item button{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:16px 20px;border:0;background:#fff;color:#0b3267;text-align:left;font-size:15px;font-weight:600;line-height:1.35}
+.service-page .service-faq-item button b{font-size:24px;line-height:1;color:#07366e;flex:0 0 auto}
+.service-page .service-faq-item button:focus-visible,.service-page .treatment-options a:focus-visible{outline:3px solid #17a9b7;outline-offset:2px}
+.service-page .faq-answer{padding:0 20px 18px;color:#4c687f;font-size:15px;line-height:1.55}
+.service-page .faq-answer p{margin:0}
+.service-page .service-faq-item.is-open button{color:#087f99}
+.service-page .service-final-cta{background:linear-gradient(105deg,#052c5a,#06396f);padding:42px 0;color:#fff}
+.service-page .final-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.service-page .service-final-cta h2{font-size:clamp(1.35rem,2.3vw,1.8rem);color:#fff;margin:0 0 5px;line-height:1.15;letter-spacing:-.025em}
+.service-page .service-final-cta h2 span{color:#20d1d5}
+.service-page .service-final-cta p{font-size:15px;color:#d6e8f6;margin:0;line-height:1.45}
+.service-page .service-final-cta .btn{background:#fff;color:#0b3267;border-color:#fff;font-size:14px;padding:15px 24px;white-space:nowrap}
+@media(min-width:1400px){.service-page .service-hero,.service-page .service-hero-inner{min-height:665px}.service-page .service-hero-inner{padding-top:42px;padding-bottom:35px}.service-page .service-hero-copy{max-width:530px}.service-page .service-hero h1{font-size:3.35rem}.service-page .overview-image{height:420px}.service-page .service-symptoms{min-height:670px}.service-page .symptoms-grid{min-height:642px}.service-page .symptoms-image{min-height:670px}.service-page .diagnosis-card{min-height:150px}}
+@media(max-width:900px){.service-page .service-hero,.service-page .service-hero-inner{min-height:600px}.service-page .service-hero-bg{background-position:55% center}.service-page .service-benefits{gap:15px}.service-page .overview-grid{gap:24px}.service-page .overview-image{height:360px}.service-page .symptoms-grid{grid-template-columns:1.12fr .88fr}.service-page .symptom-list{gap:7px}.service-page .symptom-list li{font-size:9px;padding:8px}.service-page .symptoms-image{min-height:600px}.service-page .diagnosis-grid{gap:10px}.service-page .diagnosis-card{min-height:190px}.service-page .diagnosis-card img{width:115px;height:105px}}
+@media(max-width:680px){.service-page .service-hero,.service-page .service-hero-inner{min-height:520px}.service-page .service-hero-bg{background-size:auto 100%;background-position:64% center;opacity:.82}.service-page .service-hero:after{background:linear-gradient(90deg,rgba(2,35,77,.88) 0%,rgba(2,35,77,.68) 58%,rgba(2,35,77,.12) 100%)}.service-page .service-hero-inner{padding-top:18px;padding-bottom:18px}.service-page .service-breadcrumb{font-size:9px;margin-bottom:24px}.service-page .service-hero-copy{max-width:430px}.service-page .service-hero h1{font-size:clamp(2rem,8vw,2.7rem)}.service-page .service-hero-copy p{font-size:12px;max-width:360px}.service-page .service-benefits{grid-template-columns:1fr 1fr;gap:14px 18px;padding-top:28px;max-width:390px}.service-page .service-benefit{font-size:10px}.service-page .service-overview{padding:22px 0 25px}.service-page .overview-grid{grid-template-columns:1fr;gap:19px}.service-page .overview-image{height:auto;aspect-ratio:1.9;object-fit:cover}.service-page .overview-copy h2 br{display:none}.service-page .overview-copy h2{font-size:2rem}.service-page .overview-copy p{font-size:12px}.service-page .service-symptoms{padding-top:0}.service-page .symptoms-grid{grid-template-columns:1fr;gap:0}.service-page .symptoms-copy{padding:25px 0 22px}.service-page .symptoms-copy h2{font-size:2rem}.service-page .symptom-list{gap:8px}.service-page .symptom-list li{font-size:10px;min-height:39px}.service-page .symptoms-image{width:100%;height:auto;min-height:0;max-height:none;aspect-ratio:1.9;object-position:77% center;margin:0 0 0}.service-page .service-diagnosis{padding:27px 0 29px}.service-page .service-diagnosis h2{font-size:1.8rem}.service-page .diagnosis-lead{font-size:11px}.service-page .desktop-only{display:none}.service-page .diagnosis-grid{grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}.service-page .diagnosis-card{min-height:126px;padding:8px 7px 12px}.service-page .diagnosis-card img{width:78px;height:70px}.service-page .diagnosis-card h3{font-size:11px}.service-page .service-options{padding:26px 0}.service-page .service-options h2{font-size:1.8rem}.service-page .options-lead{margin-bottom:17px}.service-page .treatment-options{grid-template-columns:1fr 1fr;gap:9px}.service-page .treatment-options a{font-size:10px;padding:10px 13px;min-height:42px}.service-page .service-journey{padding:25px 0}.service-page .service-journey h2{font-size:1.8rem}.service-page .journey-lead{font-size:12px}.service-page .journey-grid{grid-template-columns:1fr;gap:10px}.service-page .journey-card{min-height:90px;padding:15px 16px}.service-page .journey-card h3{font-size:15px}.service-page .journey-card ul{font-size:12px}.service-page .service-faq{padding:24px 0}.service-page .faq-grid{grid-template-columns:1fr;gap:8px}.service-page .service-faq-item button{font-size:11px}.service-page .service-final-cta{padding:22px 0}.service-page .final-cta-inner{align-items:flex-start;flex-direction:column;gap:15px}.service-page .service-final-cta h2{font-size:1.55rem}.service-page .service-final-cta p{font-size:11px}}
+@media(max-width:380px){.service-page .service-hero,.service-page .service-hero-inner{min-height:540px}.service-page .service-benefits{gap:12px}.service-page .symptom-list{grid-template-columns:1fr}.service-page .diagnosis-card img{width:68px;height:62px}}
+
+
+/* Final image-fit refinements for the service page */
+.service-page .service-hero-bg {
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.service-page .service-hero:after {
+  background: linear-gradient(90deg, rgba(2,35,77,.08) 0%, rgba(2,35,77,.03) 38%, transparent 70%);
+}
+
+/* The symptom artwork is a wide banner: keep its original composition visible across the section. */
+.service-page .service-symptoms {
+  position: relative;
+  isolation: isolate;
+  background-color: #eaf7fb;
+  background-image: url("assets/service-kidney-stone-symptoms.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.service-page .service-symptoms::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(234,247,251,.98) 0%, rgba(234,247,251,.96) 48%, rgba(234,247,251,.18) 72%, rgba(234,247,251,0) 100%);
+  pointer-events: none;
+}
+.service-page .symptoms-grid {
+  display: block;
+  min-height: 0;
+  position: relative;
+}
+.service-page .symptoms-copy {
+  position: relative;
+  z-index: 1;
+  width: min(66%, 900px);
+  padding: 54px 0 58px;
+}
+.service-page .symptoms-image {
+  display: none;
+}
+@media (max-width: 900px) {
+  .service-page .service-hero-bg { background-size: auto 100%; background-position: 75% center; }
+  .service-page .service-hero:after { background: linear-gradient(90deg, rgba(2,35,77,.30), rgba(2,35,77,.05) 75%); }
+  .service-page .symptoms-copy { width: 76%; padding: 42px 0; }
+  .service-page .service-symptoms { background-position: 58% center; }
+  .service-page .service-symptoms::before { background: linear-gradient(90deg, rgba(234,247,251,.98) 0%, rgba(234,247,251,.95) 60%, rgba(234,247,251,.35) 100%); }
+}
+@media (max-width: 680px) {
+  .service-page .service-hero-bg { background-size: auto 100%; background-position: 68% center; }
+  .service-page .service-hero:after { background: linear-gradient(90deg, rgba(2,35,77,.65) 0%, rgba(2,35,77,.35) 65%, rgba(2,35,77,.05) 100%); }
+  .service-page .symptoms-copy { width: 100%; padding: 34px 0; }
+  .service-page .service-symptoms { background-position: 66% center; }
+  .service-page .service-symptoms::before { background: rgba(234,247,251,.88); }
+  .service-page .symptom-list { grid-template-columns: 1fr; gap: 10px; }
+}
+
+
+/* Preserve source-image proportions rather than stretching the banner artwork. */
+.service-page .service-hero {
+  min-height: 760px;
+}
+.service-page .service-hero-bg {
+  background-size: auto 100%;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-color: #052d62;
+}
+.service-page .service-hero-inner {
+  min-height: 760px;
+}
+.service-page .service-hero:after {
+  background: linear-gradient(90deg, rgba(2,35,77,.10) 0%, rgba(2,35,77,.05) 38%, transparent 70%);
+}
+
+/* Symptoms image is a 2.5:1 banner; preserve its aspect ratio and give it room. */
+.service-page .service-symptoms {
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.service-page .symptoms-copy {
+  min-height: 0;
+}
+@media (min-width: 1200px) {
+  .service-page .service-symptoms {
+    min-height: 760px;
+  }
+  .service-page .symptoms-copy {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
+@media (max-width: 1199px) {
+  .service-page .service-hero,
+  .service-page .service-hero-inner {
+    min-height: 690px;
+  }
+  .service-page .service-hero-bg {
+    background-size: auto 100%;
+    background-position: right center;
+  }
+  .service-page .service-symptoms {
+    background-size: auto 100%;
+    background-position: right center;
+  }
+}
+@media (max-width: 680px) {
+  .service-page .service-hero,
+  .service-page .service-hero-inner {
+    min-height: 0;
+  }
+  .service-page .service-hero-bg {
+    background-size: auto 100%;
+    background-position: 72% center;
+  }
+  .service-page .service-hero-inner {
+    padding-bottom: 28px;
+  }
+  .service-page .service-symptoms {
+    min-height: 0;
+    background-size: auto 100%;
+    background-position: 70% center;
+  }
+}
+
+/* Ensure FAQ panels can expand visibly even if a shared stylesheet sets display rules. */
+.service-page .service-faq-item .faq-answer[hidden] {
+  display: none !important;
+}
+.service-page .service-faq-item .faq-answer:not([hidden]) {
+  display: block !important;
+  height: auto;
+  opacity: 1;
+  overflow: visible;
+  visibility: visible;
+}
+.service-page .service-faq-item button {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+
+/* Updated service hero background artwork */
+.service-page .service-hero {
+  background-color: #052d62;
+  background-image: url("assets/service-hero-background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  isolation: isolate;
+}
+.service-page .service-hero::before {
+  background: linear-gradient(90deg,
+    rgba(3, 35, 79, 0.20) 0%,
+    rgba(3, 35, 79, 0.12) 35%,
+    rgba(3, 35, 79, 0.02) 58%,
+    rgba(3, 35, 79, 0.00) 100%);
+  pointer-events: none;
+}
+.service-page .service-hero::after {
+  content: none;
+}
+.service-page .service-hero-bg {
+  background-image: none !important;
+}
+@media (max-width: 900px) {
+  .service-page .service-hero {
+    background-position: 58% center;
+  }
+}
+@media (max-width: 680px) {
+  .service-page .service-hero {
+    background-position: 64% center;
+    background-size: cover;
+  }
+}
+
+
+/* Updated Common Symptoms background image (1920 × 600, original proportions preserved) */
+.service-page .service-symptoms {
+  background-color: #eaf7fb;
+  background-image: url("assets/service-symptoms-background-1920x600.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  isolation: isolate;
+}
+.service-page .service-symptoms::before {
+  background: linear-gradient(
+    90deg,
+    rgba(234, 247, 251, 0.98) 0%,
+    rgba(234, 247, 251, 0.96) 36%,
+    rgba(234, 247, 251, 0.80) 50%,
+    rgba(234, 247, 251, 0.18) 73%,
+    rgba(234, 247, 251, 0.00) 100%
+  );
+  pointer-events: none;
+}
+.service-page .symptoms-copy {
+  width: min(58%, 900px);
+  padding: 54px 0 58px;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 1199px) {
+  .service-page .service-symptoms {
+    background-size: cover;
+    background-position: 58% center;
+  }
+  .service-page .symptoms-copy {
+    width: min(70%, 800px);
+  }
+}
+@media (max-width: 680px) {
+  .service-page .service-symptoms {
+    background-position: 66% center;
+    background-size: cover;
+  }
+  .service-page .service-symptoms::before {
+    background: rgba(234, 247, 251, 0.88);
+  }
+  .service-page .symptoms-copy {
+    width: 100%;
+    padding: 34px 0;
+  }
+}
+
+
+/* Final service-page background visibility and section height fixes */
+.service-page .service-hero {
+  background-color: #052d62 !important;
+  background-image: url("assets/service-hero-background.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+}
+
+/* The supplied symptoms artwork is exactly 1920 × 600px, so use a 600px section. */
+.service-page .service-symptoms {
+  height: 600px;
+  min-height: 600px;
+  box-sizing: border-box;
+  background-image: url("assets/service-symptoms-background-1920x600.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+@media (max-width: 680px) {
+  .service-page .service-symptoms {
+    height: 600px;
+    min-height: 600px;
+    background-position: 66% center !important;
+  }
+}
+
+
+/* User-supplied hero artwork — keep image proportions and show the full banner */
+.service-page .service-hero {
+  background-color: #052d62 !important;
+  background-image: url("assets/service-hero-background-user.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+}
+
+
+/* FIX: the hero artwork lives on the absolutely positioned .service-hero-bg layer.
+   Do not clear that layer's background; it was the reason the image disappeared. */
+.service-page .service-hero {
+  background-color: #052d62 !important;
+  background-image: none !important;
+}
+.service-page .service-hero-bg {
+  background-image: url("assets/service-hero-background-user.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: right center !important;
+  background-size: auto 100% !important;
+  opacity: 1 !important;
+  z-index: -2;
+}
+.service-page .service-hero::after {
+  content: "" !important;
+  background: linear-gradient(
+    90deg,
+    rgba(3, 35, 79, 0.12) 0%,
+    rgba(3, 35, 79, 0.08) 35%,
+    rgba(3, 35, 79, 0.00) 68%
+  ) !important;
+  pointer-events: none;
+}
+@media (max-width: 900px) {
+  .service-page .service-hero-bg {
+    background-position: right center !important;
+    background-size: auto 100% !important;
+  }
+}
+@media (max-width: 680px) {
+  .service-page .service-hero-bg {
+    background-position: 68% center !important;
+    background-size: auto 100% !important;
+    opacity: 0.88 !important;
+  }
+}
+
+
+/* User-requested service hero and FAQ layout adjustments */
+.service-page .service-hero-inner {
+  min-height: 600px;
+}
+
+.service-page .service-hero {
+  min-height: 660px;
+}
+
+@media (min-width: 1200px) {
+  .faq-grid {
+    margin-inline: auto;
+    align-items: start;
+  }
+}
+
+
+/* Let the service-page FAQ grid use the full available content width. */
+.service-page .faq-grid {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+}
+
+
+/* Hero refinement to match the supplied original reference */
+@media (min-width:  901px) {
+  .service-page .service-hero-copy {
+    max-width: 700px;
+  }
+  .service-page .service-hero h1 {
+    max-width: 700px;
+    font-size: clamp(2.7rem, 3vw, 3rem);
+    line-height: 1.03;
+    letter-spacing: -0.04em;
+  }
+  .service-page .service-hero-copy p {
+    max-width: 460px;
+  }
+}
+
+
+/* Common Symptoms section refinement against the supplied original reference */
+.service-page .service-symptoms > .container.symptoms-grid {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+}
+.service-page .service-symptoms {
+  height: 600px;
+  min-height: 600px;
+  background-position: center center !important;
+  background-size: cover !important;
+}
+.service-page .service-symptoms::before {
+  background: linear-gradient(
+    90deg,
+    rgba(234, 247, 251, .97) 0%,
+    rgba(234, 247, 251, .94) 43%,
+    rgba(234, 247, 251, .72) 59%,
+    rgba(234, 247, 251, .06) 79%,
+    rgba(234, 247, 251, 0) 100%
+  ) !important;
+}
+.service-page .service-symptoms .symptoms-copy {
+  width: 62%;
+  max-width: 900px;
+  padding-top: 54px;
+  padding-bottom: 40px;
+}
+.service-page .service-symptoms .symptom-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 18px;
+  margin-top: 24px;
+}
+.service-page .service-symptoms .symptom-list li {
+  min-height: 52px;
+  box-sizing: border-box;
+  padding: 14px 16px;
+}
+@media (max-width: 900px) {
+  .service-page .service-symptoms > .container.symptoms-grid {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .service-page .service-symptoms .symptoms-copy {
+    width: 72%;
+  }
+}
+@media (max-width: 680px) {
+  .service-page .service-symptoms {
+    height: auto;
+    min-height: 600px;
+    background-position: 66% center !important;
+  }
+  .service-page .service-symptoms::before {
+    background: rgba(234, 247, 251, .88) !important;
+  }
+  .service-page .service-symptoms .symptoms-copy {
+    width: 100%;
+    max-width: none;
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+  .service-page .service-symptoms .symptom-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+
+/* Requested hero spacing and symptom card sizing */
+@media (min-width: 1400px) {
+  .service-page .service-hero-inner {
+    padding-top: 100px;
+    padding-bottom: 35px;
+  }
+}
+
+.service-page .service-symptoms .symptom-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px 18px;
+  margin-top: 24px;
+}
+
+.service-page .service-symptoms .symptom-list li {
+  min-height: 52px;
+  box-sizing: border-box;
+  padding: 18px 20px;
+}

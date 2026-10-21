@@ -596,3 +596,355 @@ footer{background:#fff;border-top:1px solid var(--line);padding:40px 0 20px}.foo
   .footer-brand-column, .footer-contact, .footer-location { grid-column: 1; }
   .map-embed-wrap { height: 190px; }
 }
+
+
+
+/* Footer visibility/layout fix: keep the complete footer and legal/credit row visible. */
+footer#footer {
+  display: block;
+  position: relative;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  overflow: visible;
+  clear: both;
+}
+footer#footer > .container {
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  overflow: visible;
+}
+footer#footer .footer-grid {
+  display: grid;
+  grid-template-columns: minmax(180px, 1.15fr) minmax(115px, .72fr)
+                         minmax(170px, 1.12fr) minmax(205px, 1.25fr)
+                         minmax(220px, 1.25fr);
+  gap: 26px;
+  align-items: start;
+  height: auto;
+  overflow: visible;
+}
+footer#footer .footer-location,
+footer#footer .footer-contact,
+footer#footer .footer-brand-column {
+  display: block;
+  min-width: 0;
+  height: auto;
+  overflow: visible;
+}
+footer#footer .map-embed-wrap {
+  width: 100%;
+  height: 174px;
+}
+footer#footer .map-embed-wrap iframe {
+  width: 100%;
+  height: 100%;
+}
+footer#footer .footer-bottom {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-height: 40px;
+  max-height: none;
+  margin-top: 28px;
+  padding: 16px 0 4px;
+  border-top: 1px solid var(--line);
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  overflow: visible;
+  box-sizing: border-box;
+}
+footer#footer .footer-bottom > span {
+  display: inline-block;
+  max-width: 100%;
+}
+footer#footer .footer-bottom .footer-credit {
+  white-space: normal;
+}
+@media (max-width: 1150px) {
+  footer#footer .footer-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  footer#footer .footer-location {
+    grid-column: auto;
+  }
+  footer#footer .footer-contact {
+    grid-column: auto;
+  }
+}
+@media (max-width: 680px) {
+  footer#footer .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px 20px;
+  }
+  footer#footer .footer-brand-column,
+  footer#footer .footer-contact,
+  footer#footer .footer-location {
+    grid-column: 1 / -1;
+  }
+  footer#footer .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 390px) {
+  footer#footer .footer-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  footer#footer .footer-brand-column,
+  footer#footer .footer-contact,
+  footer#footer .footer-location {
+    grid-column: 1;
+  }
+}
+
+
+/* Interactive Google Maps footer: keep controls and touch gestures enabled. */
+footer#footer .map-embed-wrap {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  touch-action: auto;
+}
+footer#footer .map-embed-wrap iframe {
+  display: block;
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
+  touch-action: pan-x pan-y pinch-zoom;
+  border: 0;
+}
+footer#footer .footer-map-link {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+
+/* Footer Leaflet map: genuine zoom, pan, touch gestures and marker popups. */
+footer#footer .map-embed-wrap {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  height: 174px;
+  min-height: 174px;
+  touch-action: auto;
+}
+footer#footer .hospital-footer-map {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 174px;
+  background: #edf5f4;
+  color: #526879;
+  font: 400 12px/1.45 'Poppins', sans-serif;
+  z-index: 1;
+  touch-action: pan-x pan-y pinch-zoom;
+}
+footer#footer .hospital-footer-map .map-loading,
+footer#footer .hospital-footer-map .map-error {
+  padding: 16px;
+  margin: 0;
+}
+footer#footer .hospital-footer-map .map-error a {
+  display: inline;
+  padding: 0;
+  margin-top: 6px;
+  color: #075a83;
+  text-decoration: underline;
+}
+footer#footer .hospital-footer-map .leaflet-control-container {
+  z-index: 800;
+}
+footer#footer .hospital-footer-map .leaflet-control-zoom a {
+  color: #173c59;
+  text-decoration: none;
+}
+footer#footer .hospital-footer-map .leaflet-popup-content-wrapper,
+footer#footer .hospital-footer-map .leaflet-popup-tip {
+  background: #fff;
+}
+footer#footer .hospital-footer-map .leaflet-popup-content {
+  font: 400 12px/1.5 'Poppins', sans-serif;
+}
+footer#footer .hospital-footer-map .leaflet-popup-content a {
+  display: inline;
+  padding: 0;
+  color: #075a83;
+  text-decoration: underline;
+}
+@media (max-width: 1150px) {
+  footer#footer .map-embed-wrap,
+  footer#footer .hospital-footer-map { height: 180px; min-height: 180px; }
+}
+@media (max-width: 680px) {
+  footer#footer .map-embed-wrap,
+  footer#footer .hospital-footer-map { height: 210px; min-height: 210px; }
+}
+@media (max-width: 390px) {
+  footer#footer .map-embed-wrap,
+  footer#footer .hospital-footer-map { height: 190px; min-height: 190px; }
+}
+
+
+/* Official Google Maps footer integration. Preserve the established map footprint. */
+footer#footer .map-embed-wrap {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  height: 174px;
+  min-height: 174px;
+  touch-action: auto;
+}
+footer#footer .hospital-footer-map {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 174px;
+  background: #edf5f4;
+  color: #526879;
+  font: 400 12px/1.45 'Poppins', sans-serif;
+  z-index: 1;
+  touch-action: pan-x pan-y pinch-zoom;
+}
+footer#footer .hospital-footer-map .map-loading,
+footer#footer .hospital-footer-map .map-error {
+  padding: 14px;
+  margin: 0;
+}
+footer#footer .hospital-footer-map .map-error a {
+  display: inline;
+  color: #075a83;
+  text-decoration: underline;
+  overflow-wrap: anywhere;
+}
+footer#footer .hospital-footer-map .hospital-map-info {
+  font: 400 12px/1.55 'Poppins', sans-serif;
+  color: #29465a;
+  padding: 2px;
+}
+footer#footer .hospital-footer-map .hospital-map-info strong {
+  font-weight: 700;
+}
+footer#footer .hospital-footer-map .hospital-map-info a {
+  color: #075a83;
+  text-decoration: underline;
+}
+@media (max-width: 1150px) {
+  footer#footer .map-embed-wrap,
+  footer#footer .hospital-footer-map { height: 180px; min-height: 180px; }
+}
+@media (max-width: 680px) {
+  footer#footer .map-embed-wrap,
+  footer#footer .hospital-footer-map { height: 210px; min-height: 210px; }
+}
+@media (max-width: 390px) {
+  footer#footer .map-embed-wrap,
+  footer#footer .hospital-footer-map { height: 190px; min-height: 190px; }
+}
+
+
+/* Google Maps embed supplied by the site owner: interactive iframe, responsive to footer width. */
+footer#footer .map-embed-wrap {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+footer#footer iframe.hospital-footer-map {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 174px;
+  border: 0;
+  pointer-events: auto;
+  touch-action: auto;
+  z-index: 1;
+}
+
+
+/* Direct Google Maps iframe: no intermediate map wrapper to interfere with interaction. */
+footer#footer .footer-location .footer-google-map {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 174px;
+  min-height: 174px;
+  padding: 0;
+  margin: 0 0 10px;
+  border: 1px solid #e0edf0;
+  border-radius: 12px;
+  box-sizing: border-box;
+  pointer-events: auto;
+  touch-action: auto;
+  z-index: 1;
+}
+footer#footer .footer-location {
+  min-width: 0;
+  overflow: visible;
+}
+@media (max-width: 1150px) {
+  footer#footer .footer-location .footer-google-map {
+    height: 180px;
+    min-height: 180px;
+  }
+}
+@media (max-width: 680px) {
+  footer#footer .footer-location .footer-google-map {
+    height: 210px;
+    min-height: 210px;
+  }
+}
+@media (max-width: 390px) {
+  footer#footer .footer-location .footer-google-map {
+    height: 190px;
+    min-height: 190px;
+  }
+}
+
+
+/* Final footer map interaction override */
+footer#footer .footer-location .footer-google-map {
+  display: block !important;
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: 174px !important;
+  min-height: 174px !important;
+  max-width: 100% !important;
+  border: 0 !important;
+  border-radius: 12px;
+  margin: 0 0 10px !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  pointer-events: auto !important;
+  touch-action: auto !important;
+  transform: none !important;
+  z-index: 10 !important;
+}
+footer#footer .footer-location::before,
+footer#footer .footer-location::after {
+  pointer-events: none !important;
+}
+footer#footer .footer-location .footer-google-map + .footer-map-link {
+  position: relative;
+  z-index: 11;
+}
+@media (max-width: 680px) {
+  footer#footer .footer-location .footer-google-map {
+    height: 210px !important;
+    min-height: 210px !important;
+  }
+}
+@media (max-width: 390px) {
+  footer#footer .footer-location .footer-google-map {
+    height: 190px !important;
+    min-height: 190px !important;
+  }
+}

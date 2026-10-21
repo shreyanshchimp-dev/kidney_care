@@ -456,3 +456,44 @@
     border-radius: 15px;
   }
 }
+
+/* Unified About Us typography scale. Keeps the existing layout, colors and copy intact. */
+.about-page {
+  --about-type-body: 1rem;
+  --about-type-small: .875rem;
+  --about-type-label: .8125rem;
+  --about-type-h1: clamp(2.25rem, 3.6vw, 3.25rem);
+  --about-type-h2: clamp(1.75rem, 2.6vw, 2.25rem);
+  --about-type-h3: 1.125rem;
+  --about-leading-body: 1.7;
+  --about-leading-heading: 1.2;
+}
+.about-page h1,
+.about-page h2,
+.about-page h3 {
+  font-family: inherit;
+  letter-spacing: -.025em;
+  line-height: var(--about-leading-heading);
+}
+.about-page h1 { font-size: var(--about-type-h1); font-weight: 800; margin-bottom: 1rem; }
+.about-page h2 { font-size: var(--about-type-h2); font-weight: 800; margin-bottom: .875rem; }
+.about-page h3 { font-size: var(--about-type-h3); font-weight: 700; margin-bottom: .625rem; }
+.about-page p { font-size: var(--about-type-body); font-weight: 400; line-height: var(--about-leading-body); margin-bottom: 1rem; }
+.about-page .eyebrow { font-size: var(--about-type-label); font-weight: 700; line-height: 1.4; letter-spacing: .12em; margin-bottom: .75rem; }
+.about-page .ab-credentials { font-size: var(--about-type-small) !important; font-weight: 600; line-height: 1.55 !important; margin: .25rem 0 .875rem; }
+.about-page .ab-doctor-copy > p:not(.ab-credentials),
+.about-page .ab-facilities-copy > p,
+.about-page .ab-section-title p,
+.about-page .ab-cta-copy p { font-size: var(--about-type-body); line-height: var(--about-leading-body); }
+.about-page .ab-story-values strong,
+.about-page .ab-doctor-points strong,
+.about-page .ab-facility-features strong { font-size: var(--about-type-label); font-weight: 600; line-height: 1.45; }
+.about-page .ab-step h3 { font-size: var(--about-type-h3); font-weight: 700; line-height: 1.3; }
+.about-page .ab-step p { font-size: var(--about-type-small); line-height: 1.55; }
+.about-page .btn,
+.about-page a.btn,
+.about-page .cta-actions .btn { font-family: inherit; font-size: .9375rem; font-weight: 600; line-height: 1.35; text-decoration: none; }
+.about-page a:not(.btn) { text-underline-offset: .18em; }
+@media (max-width: 680px) {
+  .about-page { --about-type-h1: 2.125rem; --about-type-h2: 1.625rem; --about-type-h3: 1.0625rem; --about-type-body: .9375rem; }
+}
