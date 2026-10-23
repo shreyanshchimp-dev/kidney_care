@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="620" viewBox="0 0 900 620">
+<defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#eaf8fc"/><stop offset="1" stop-color="#ccecf7"/></linearGradient></defs>
+<rect width="900" height="620" rx="20" fill="url(#g)"/>
+<g fill="none" stroke="#1686b3" stroke-width="8" opacity=".7"><path d="M390 95 C365 160 400 210 420 260 C438 310 420 365 430 420 C438 470 465 500 455 545"/><path d="M510 95 C535 160 500 210 480 260 C462 310 480 365 470 420 C462 470 435 500 445 545"/></g>
+<rect x="160" y="235" width="580" height="150" rx="18" fill="#fff" opacity=".94"/>
+<text x="450" y="292" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#0b356b">INTRODUCTION IMAGE PLACEHOLDER</text>
+<text x="450" y="333" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" fill="#36556f">Awaiting your supplied image</text>
+</svg>

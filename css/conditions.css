@@ -1,0 +1,817 @@
+/* Conditions page — matched to the supplied visual reference. */
+.conditions-page{color:#102f68;overflow:hidden}
+.conditions-page .conditions-hero{position:relative;isolation:isolate;min-height:335px;background:#eaf8ff;overflow:hidden}
+.conditions-page .conditions-hero:after{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,rgba(243,251,255,.10) 0%,rgba(243,251,255,.04) 44%,transparent 68%);pointer-events:none}
+.conditions-page .conditions-hero-art{position:absolute;z-index:-2;inset:0;width:100%;background:url('../assets/conditions-hero-urinary-system.webp') center center/cover no-repeat;clip-path:none}
+.conditions-page .conditions-hero-inner{position:relative;min-height:335px;padding-top:18px;padding-bottom:16px;display:flex;flex-direction:column;align-items:flex-start}
+.conditions-page .conditions-breadcrumb{display:flex;align-items:center;gap:7px;font-size:13px;color:#092c70;margin-bottom:12px}
+.conditions-page .conditions-breadcrumb a{color:#00aeea}.conditions-page .conditions-breadcrumb span[aria-hidden]{font-size:20px;line-height:1;color:#00aeea}
+.conditions-page .conditions-hero-copy{max-width:600px;position:relative;z-index:1}
+.conditions-page .conditions-hero h1{font-size:clamp(2.6rem,4.9vw,3.45rem);line-height:.99;letter-spacing:-.045em;margin:0 0 9px;color:#102e77;font-weight:800}
+.conditions-page .conditions-hero h1 span,.conditions-page .conditions-section-title span,.conditions-page .conditions-symptoms-copy h2 span,.conditions-page .conditions-final-cta h2 span{color:#08b3e9}
+.conditions-page .conditions-hero-copy p{margin:0;color:#19376d;font-size:16px;line-height:1.35}
+.conditions-page .conditions-primary-btn{margin-top:16px;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 25px;border-radius:30px;background:#2417fa;color:#fff;font-size:13px;font-weight:600;box-shadow:0 5px 12px #2318fa20;transition:transform .2s,box-shadow .2s}
+.conditions-page .conditions-primary-btn:hover,.conditions-page .conditions-cta-button:hover{transform:translateY(-2px);box-shadow:0 8px 18px #081e5528}
+.conditions-page .conditions-primary-btn .ui-icon-svg,.conditions-page .conditions-cta-button .ui-icon-svg{width:17px;height:17px}
+.conditions-page .conditions-benefits{display:flex;align-items:center;gap:30px;margin-top:auto;padding-top:18px;max-width:650px;position:relative;z-index:1}
+.conditions-page .conditions-benefit{display:flex;align-items:center;gap:9px;color:#0871b5;font-size:11px;font-weight:500;line-height:1.35;min-width:0}
+.conditions-page .conditions-benefit .ui-icon-svg{width:36px;height:36px;flex:0 0 36px;stroke-width:1.65;color:#00b6f1}
+.conditions-page .conditions-catalog{padding:14px 0 11px;background:#fff}
+.conditions-page .conditions-section-title{text-align:center;font-size:clamp(1.8rem,3.2vw,2.25rem);font-weight:800;letter-spacing:-.045em;line-height:1.12;margin:0 0 27px;color:#102f72}
+.conditions-page .conditions-section-title:after{content:"";display:block;width:48px;height:2px;background:#0bb8ee;margin:8px auto 0}
+.conditions-page .conditions-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 9px}
+.conditions-page .condition-card{border:1px solid #d9edf7;border-radius:12px;padding:5px;background:#fff;box-shadow:0 1px 4px #0b5b7a08;overflow:hidden;min-width:0}
+.conditions-page .condition-card>img{display:block;width:100%;height:154px;object-fit:cover;object-position:center;border-radius:6px;background:#eaf7fb}
+.conditions-page .condition-card-content{padding:8px 8px 10px}
+.conditions-page .condition-card h3{font-size:15px;line-height:1.25;letter-spacing:-.035em;margin:0 0 8px;color:#082d72;font-weight:800}
+.conditions-page .condition-card ul{margin:0;padding:0 0 0 15px;list-style:none;color:#294a82;font-size:13px;line-height:1.62}
+.conditions-page .condition-card li{position:relative;padding-left:0}
+.conditions-page .condition-card li:before{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:#05b9ed;left:-14px;top:.52em}
+.conditions-page .conditions-symptoms{display:grid;grid-template-columns:42% 58%;min-height:310px;align-items:stretch;background:#eaf8ff url('../assets/conditions-symptoms-banner.webp') center center/cover no-repeat;position:relative;overflow:hidden}
+.conditions-page .conditions-symptoms:after{content:"";position:absolute;right:-70px;bottom:-150px;width:360px;height:360px;border-radius:50%;border:1px solid #bfefff;box-shadow:0 0 0 26px #e1f7ff;pointer-events:none}
+.conditions-page .conditions-symptoms-photo{position:relative;min-height:310px;overflow:hidden;visibility:hidden;clip-path:none}
+.conditions-page .conditions-symptoms-photo:after{display:none}
+.conditions-page .conditions-symptoms-photo img{width:100%;height:100%;min-height:310px;display:block;object-fit:cover;object-position:left center}
+.conditions-page .conditions-symptoms-copy{padding:20px 4.5% 18px 3%;position:relative;z-index:1}
+.conditions-page .conditions-symptoms-copy h2{font-size:clamp(1.55rem,2.8vw,2rem);line-height:1.1;letter-spacing:-.04em;margin:0 0 17px;text-align:center;color:#102e72}
+.conditions-page .conditions-symptoms-copy h2:after{content:"";display:block;width:36px;height:2px;background:#06b7ed;margin:8px 0 0 8px}
+.conditions-page .symptoms-list-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));row-gap:18px}
+.conditions-page .condition-symptom{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;gap:5px;min-height:95px;padding:0 9px;position:relative;color:#092d70}
+.conditions-page .condition-symptom:not(:nth-child(3n)):after{content:"";position:absolute;right:0;top:20px;height:48px;width:1px;background:#b8e8f9}
+.conditions-page .condition-symptom-icon{width:70px;height:70px;display:grid;place-items:center;border-radius:50%;background:#d9f3fd;color:#0c3c94}
+.conditions-page .condition-symptom-icon .ui-icon-svg{width:35px;height:35px;stroke-width:1.7}
+.conditions-page .condition-symptom-icon.blood{color:#f12e18}.conditions-page .condition-symptom-icon.blood .ui-icon-svg{fill:#f12e18;stroke:#fff;width:33px;height:33px}
+.conditions-page .condition-symptom strong{font-size:12px;line-height:1.25;font-weight:700}
+.conditions-page .conditions-evaluation{padding:18px 0 16px;background:#fff}
+.conditions-page .conditions-evaluation .conditions-section-title{margin-bottom:7px;font-size:clamp(1.6rem,2.8vw,2rem)}
+.conditions-page .conditions-evaluation .conditions-section-title:after{display:none}
+.conditions-page .evaluation-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.conditions-page .evaluation-card{min-height:112px;border:1px solid #dceef7;border-radius:14px;padding:7px 8px 9px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;position:relative;text-align:center;background:#fff}
+.conditions-page .evaluation-number{position:absolute;top:7px;left:10px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,#1177bd,#0061a6);font-size:16px;font-weight:700}
+.conditions-page .evaluation-number.cyan{background:linear-gradient(135deg,#05c7ee,#00a7e4)}
+.conditions-page .evaluation-card img,.conditions-page .evaluation-illustration{width:62px;height:62px;object-fit:contain;display:grid;place-items:center;border-radius:50%;background:#def5fd;margin:0 auto 4px}
+.conditions-page .evaluation-illustration .ui-icon-svg{width:35px;height:35px;color:#083b91;stroke-width:1.7}
+.conditions-page .evaluation-card h3{font-size:12px;line-height:1.25;margin:0;color:#0a2d70;font-weight:700}
+.conditions-page .conditions-final-cta{background:linear-gradient(110deg,#06235e,#052a70);color:#fff;padding:23px 0 25px}
+.conditions-page .conditions-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:22px}
+.conditions-page .conditions-final-cta h2{font-size:clamp(1.35rem,2.6vw,1.8rem);line-height:1.2;color:#fff;margin:0 0 3px;letter-spacing:-.035em}
+.conditions-page .conditions-final-cta p{margin:0;color:#f0f5ff;font-size:14px;line-height:1.4}
+.conditions-page .conditions-cta-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 27px;background:#fff;border-radius:30px;color:#211bfa;white-space:nowrap;font-size:13px;font-weight:600;transition:transform .2s,box-shadow .2s}
+.conditions-page .conditions-cta-button .ui-icon-svg{width:17px;height:17px}
+@media(min-width:1400px){.conditions-page .conditions-hero,.conditions-page .conditions-hero-inner{min-height:370px}.conditions-page .conditions-hero-art{width:100%}.conditions-page .condition-card>img{height:180px}.conditions-page .condition-card h3{font-size:16px}.conditions-page .condition-card ul{font-size:14px}.conditions-page .conditions-symptoms,.conditions-page .conditions-symptoms-photo,.conditions-page .conditions-symptoms-photo img{min-height:350px}}
+@media(max-width:900px){.conditions-page .conditions-hero,.conditions-page .conditions-hero-inner{min-height:330px}.conditions-page .conditions-hero-art{width:100%;background-position:center center}.conditions-page .conditions-hero h1{font-size:clamp(2.2rem,5.4vw,3rem)}.conditions-page .conditions-benefits{gap:16px;max-width:590px}.conditions-page .conditions-benefit{font-size:10px;gap:6px}.conditions-page .conditions-benefit .ui-icon-svg{width:30px;height:30px;flex-basis:30px}.conditions-page .condition-card>img{height:130px}.conditions-page .condition-card h3{font-size:13px}.conditions-page .condition-card ul{font-size:11px}.conditions-page .conditions-symptoms{grid-template-columns:40% 60%}.conditions-page .conditions-symptoms-copy{padding-left:2%;padding-right:2%}.conditions-page .conditions-symptoms-copy h2{font-size:1.55rem}.conditions-page .condition-symptom-icon{width:58px;height:58px}.conditions-page .condition-symptom-icon .ui-icon-svg{width:30px;height:30px}}
+@media(max-width:680px){.conditions-page .conditions-hero,.conditions-page .conditions-hero-inner{min-height:420px}.conditions-page .conditions-hero-art{width:100%;opacity:1;background-position:68% center;clip-path:none}.conditions-page .conditions-hero:after{background:linear-gradient(90deg,rgba(243,251,255,.97) 0%,rgba(243,251,255,.88) 54%,rgba(243,251,255,.35) 100%)}.conditions-page .conditions-hero-inner{padding-top:15px;padding-bottom:18px}.conditions-page .conditions-breadcrumb{font-size:12px;margin-bottom:22px}.conditions-page .conditions-hero-copy{max-width:100%}.conditions-page .conditions-hero h1{font-size:clamp(2.15rem,9vw,3rem)}.conditions-page .conditions-hero-copy p{font-size:14px}.conditions-page .desktop-only{display:none}.conditions-page .conditions-benefits{display:grid;grid-template-columns:1fr 1fr;gap:14px 10px;width:100%;padding-top:25px}.conditions-page .conditions-benefit{font-size:11px}.conditions-page .conditions-benefit .ui-icon-svg{width:32px;height:32px;flex-basis:32px}.conditions-page .conditions-catalog{padding:25px 0}.conditions-page .conditions-section-title{font-size:1.75rem;margin-bottom:20px}.conditions-page .conditions-card-grid{grid-template-columns:1fr 1fr;gap:10px}.conditions-page .condition-card{padding:4px;border-radius:10px}.conditions-page .condition-card>img{height:105px}.conditions-page .condition-card-content{padding:7px 6px 8px}.conditions-page .condition-card h3{font-size:12px;line-height:1.22;margin-bottom:6px}.conditions-page .condition-card ul{font-size:10px;line-height:1.55;padding-left:12px}.conditions-page .condition-card li:before{width:6px;height:6px;left:-11px;top:.55em}.conditions-page .conditions-symptoms{grid-template-columns:1fr;background:#eaf8ff}.conditions-page .conditions-symptoms-photo{visibility:visible;min-height:210px;height:210px;clip-path:none}.conditions-page .conditions-symptoms-photo:after{display:none}.conditions-page .conditions-symptoms-photo img{min-height:210px;object-position:left center}.conditions-page .conditions-symptoms-copy{background:linear-gradient(115deg,#eefaff,#e7f8ff 70%,#f8fcff)}.conditions-page .conditions-symptoms-copy{padding:24px 4% 25px}.conditions-page .conditions-symptoms-copy h2{font-size:1.55rem}.conditions-page .symptoms-list-grid{row-gap:16px}.conditions-page .condition-symptom{min-height:92px;padding:0 5px}.conditions-page .condition-symptom-icon{width:58px;height:58px}.conditions-page .condition-symptom strong{font-size:11px}.conditions-page .conditions-evaluation{padding:25px 0}.conditions-page .conditions-evaluation .conditions-section-title{font-size:1.55rem;margin-bottom:17px}.conditions-page .evaluation-grid{grid-template-columns:1fr 1fr;gap:10px}.conditions-page .evaluation-card{min-height:120px}.conditions-page .evaluation-number{width:27px;height:27px;font-size:14px;top:6px;left:7px}.conditions-page .evaluation-card img,.conditions-page .evaluation-illustration{width:60px;height:60px}.conditions-page .conditions-final-cta{padding:25px 0}.conditions-page .conditions-cta-inner{align-items:flex-start;flex-direction:column;gap:17px}.conditions-page .conditions-final-cta h2{font-size:1.5rem}.conditions-page .conditions-final-cta p{font-size:12px}.conditions-page .conditions-cta-button{font-size:12px;padding:13px 21px}}
+@media(max-width:390px){.conditions-page .conditions-card-grid{grid-template-columns:1fr}.conditions-page .condition-card>img{height:160px}.conditions-page .condition-card h3{font-size:14px}.conditions-page .condition-card ul{font-size:12px}.conditions-page .conditions-hero h1{font-size:2.1rem}.conditions-page .conditions-benefits{gap:12px 6px}}
+
+/* Conditions page visual refinement: stronger hero, larger imagery and a clearer symptoms panel. */
+.conditions-page .conditions-hero,
+.conditions-page .conditions-hero-inner{min-height:560px}
+.conditions-page .conditions-hero-inner{padding-top:30px;padding-bottom:28px}
+.conditions-page .conditions-hero-art{background-position:center 44%;background-size:cover}
+.conditions-page .conditions-hero:after{background:linear-gradient(90deg,rgba(243,251,255,.2) 0%,rgba(243,251,255,.12) 42%,rgba(243,251,255,0) 70%)}
+.conditions-page .conditions-breadcrumb{margin-bottom:20px}
+.conditions-page .conditions-hero h1{font-size:clamp(3rem,5vw,4rem);line-height:1.02;margin-bottom:15px}
+.conditions-page .conditions-hero-copy p{font-size:18px;line-height:1.5}
+.conditions-page .conditions-primary-btn{margin-top:24px;padding:15px 29px;font-size:14px}
+.conditions-page .conditions-benefits{gap:32px;max-width:720px;padding-top:25px}
+.conditions-page .conditions-benefit{font-size:13px;gap:11px}
+.conditions-page .conditions-benefit .ui-icon-svg{width:40px;height:40px;flex-basis:40px}
+.conditions-page .conditions-catalog{padding:34px 0 30px}
+.conditions-page .conditions-section-title{margin-bottom:30px;font-size:clamp(2rem,3.1vw,2.5rem)}
+.conditions-page .conditions-card-grid{gap:16px 14px}
+.conditions-page .condition-card{padding:7px;border-radius:15px;box-shadow:0 4px 18px rgba(6,57,105,.055);transition:transform .2s ease,box-shadow .2s ease}
+.conditions-page .condition-card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(6,57,105,.11)}
+.conditions-page .condition-card>img{height:220px;border-radius:9px;object-fit:cover}
+.conditions-page .condition-card-content{padding:12px 10px 13px}
+.conditions-page .condition-card h3{font-size:17px;line-height:1.3;margin-bottom:10px}
+.conditions-page .condition-card ul{font-size:14px;line-height:1.7;padding-left:17px}
+.conditions-page .condition-card li:before{width:8px;height:8px;left:-15px;top:.58em}
+.conditions-page .conditions-symptoms{grid-template-columns:42% 58%;min-height:410px;background-size:cover;background-position:center center;background-repeat:no-repeat;isolation:isolate}
+.conditions-page .conditions-symptoms:after{right:-110px;bottom:-190px;width:430px;height:430px;border-color:rgba(77,190,231,.25);box-shadow:0 0 0 30px rgba(225,247,255,.35);z-index:-1}
+.conditions-page .conditions-symptoms-photo{min-height:410px;visibility:hidden}
+.conditions-page .conditions-symptoms-copy{display:flex;flex-direction:column;justify-content:center;padding:34px 5% 32px 3%;background:linear-gradient(90deg,rgba(237,249,255,.2),rgba(237,249,255,.04))}
+.conditions-page .conditions-symptoms-copy h2{font-size:clamp(1.9rem,2.7vw,2.35rem);line-height:1.15;margin:0 0 25px;text-align:center}
+.conditions-page .conditions-symptoms-copy h2:after{margin:12px auto 0;width:48px}
+.conditions-page .symptoms-list-grid{row-gap:26px;column-gap:8px}
+.conditions-page .condition-symptom{min-height:125px;gap:9px;padding:0 10px}
+.conditions-page .condition-symptom:not(:nth-child(3n)):after{top:20px;height:62px;background:rgba(87,181,222,.4)}
+.conditions-page .condition-symptom-icon{width:78px;height:78px;box-shadow:0 5px 15px rgba(28,125,174,.08);border:1px solid rgba(89,190,229,.15)}
+.conditions-page .condition-symptom-icon .ui-icon-svg{width:38px;height:38px}
+.conditions-page .condition-symptom strong{font-size:14px;line-height:1.35}
+.conditions-page .conditions-evaluation{padding:30px 0 28px}
+.conditions-page .conditions-evaluation .conditions-section-title{margin-bottom:20px;font-size:clamp(1.85rem,2.7vw,2.25rem)}
+.conditions-page .evaluation-grid{gap:15px}
+.conditions-page .evaluation-card{min-height:140px;padding:12px 10px;border-radius:15px;box-shadow:0 3px 14px rgba(6,57,105,.035)}
+.conditions-page .evaluation-number{width:34px;height:34px;top:10px;left:12px;font-size:17px}
+.conditions-page .evaluation-card img,.conditions-page .evaluation-illustration{width:72px;height:72px;margin-bottom:8px}
+.conditions-page .evaluation-illustration .ui-icon-svg{width:39px;height:39px}
+.conditions-page .evaluation-card h3{font-size:14px;line-height:1.35}
+.conditions-page .conditions-final-cta{padding:30px 0 32px}
+.conditions-page .conditions-final-cta h2{font-size:clamp(1.6rem,2.5vw,2rem)}
+.conditions-page .conditions-final-cta p{font-size:16px}
+.conditions-page .conditions-cta-button{padding:16px 30px;font-size:14px}
+
+@media (min-width:1400px){
+  .conditions-page .conditions-hero,.conditions-page .conditions-hero-inner{min-height:600px}
+  .conditions-page .condition-card>img{height:245px}
+  .conditions-page .conditions-symptoms,.conditions-page .conditions-symptoms-photo{min-height:440px}
+}
+@media (max-width:1100px){
+  .conditions-page .conditions-hero,.conditions-page .conditions-hero-inner{min-height:500px}
+  .conditions-page .conditions-hero-inner{padding-top:25px;padding-bottom:24px}
+  .conditions-page .conditions-hero h1{font-size:clamp(2.7rem,5vw,3.4rem)}
+  .conditions-page .conditions-benefits{gap:20px;max-width:620px}
+  .conditions-page .conditions-benefit{font-size:11px}
+  .conditions-page .condition-card>img{height:185px}
+  .conditions-page .condition-card h3{font-size:15px}
+  .conditions-page .condition-card ul{font-size:12px}
+  .conditions-page .conditions-symptoms,.conditions-page .conditions-symptoms-photo{min-height:370px}
+  .conditions-page .conditions-symptoms-copy h2{font-size:1.8rem}
+  .conditions-page .condition-symptom-icon{width:66px;height:66px}
+  .conditions-page .condition-symptom-icon .ui-icon-svg{width:32px;height:32px}
+  .conditions-page .condition-symptom strong{font-size:12px}
+}
+@media (max-width:680px){
+  .conditions-page .conditions-hero,.conditions-page .conditions-hero-inner{min-height:520px}
+  .conditions-page .conditions-hero-inner{padding-top:18px;padding-bottom:22px}
+  .conditions-page .conditions-hero h1{font-size:clamp(2.25rem,9vw,3rem)}
+  .conditions-page .conditions-hero-copy p{font-size:14px}
+  .conditions-page .conditions-benefits{gap:15px 10px;padding-top:25px}
+  .conditions-page .conditions-benefit{font-size:11px}
+  .conditions-page .conditions-catalog{padding:27px 0 25px}
+  .conditions-page .conditions-section-title{font-size:1.75rem;margin-bottom:20px}
+  .conditions-page .conditions-card-grid{gap:12px}
+  .conditions-page .condition-card>img{height:145px}
+  .conditions-page .condition-card h3{font-size:12px}
+  .conditions-page .condition-card ul{font-size:10px;line-height:1.55}
+  .conditions-page .conditions-symptoms{display:block;min-height:0;background:#eaf8ff}
+  .conditions-page .conditions-symptoms-photo{display:none}
+  .conditions-page .conditions-symptoms-copy{padding:28px 4% 30px;background:linear-gradient(135deg,#edfaff,#e2f6ff 70%,#f8fcff)}
+  .conditions-page .conditions-symptoms-copy h2{font-size:1.7rem;margin-bottom:22px}
+  .conditions-page .symptoms-list-grid{row-gap:20px;column-gap:5px}
+  .conditions-page .condition-symptom{min-height:112px;padding:0 4px;gap:7px}
+  .conditions-page .condition-symptom-icon{width:58px;height:58px}
+  .conditions-page .condition-symptom-icon .ui-icon-svg{width:29px;height:29px}
+  .conditions-page .condition-symptom strong{font-size:11px}
+  .conditions-page .conditions-evaluation{padding:25px 0}
+  .conditions-page .evaluation-grid{gap:10px}
+  .conditions-page .evaluation-card{min-height:125px;padding:9px 6px}
+  .conditions-page .evaluation-number{width:27px;height:27px;font-size:14px;top:7px;left:7px}
+  .conditions-page .evaluation-card img,.conditions-page .evaluation-illustration{width:60px;height:60px}
+  .conditions-page .evaluation-card h3{font-size:11px}
+  .conditions-page .conditions-final-cta{padding:25px 0}
+  .conditions-page .conditions-cta-inner{align-items:flex-start;flex-direction:column;gap:16px}
+  .conditions-page .conditions-final-cta h2{font-size:1.5rem}
+  .conditions-page .conditions-final-cta p{font-size:12px}
+  .conditions-page .conditions-cta-button{font-size:12px;padding:13px 21px}
+}
+
+
+/* Final polish: align Conditions page spacing, color palette and CTA rhythm with the rest of the site. */
+.conditions-page {
+  --conditions-navy: #063c79;
+  --conditions-blue: #07518e;
+  --conditions-cyan: #08b3e9;
+  --conditions-pale: #eff9fc;
+  color: #163b5d;
+}
+.conditions-page .conditions-hero,
+.conditions-page .conditions-hero-inner {
+  min-height: 620px;
+}
+.conditions-page .conditions-hero {
+  background-color: #eaf7fc;
+}
+.conditions-page .conditions-hero-art {
+  background-position: center center;
+  background-size: cover;
+}
+.conditions-page .conditions-hero:after {
+  background: linear-gradient(90deg,
+    rgba(239, 249, 252, .20) 0%,
+    rgba(239, 249, 252, .13) 38%,
+    rgba(239, 249, 252, .025) 67%,
+    rgba(239, 249, 252, 0) 100%);
+}
+.conditions-page .conditions-hero-inner {
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+.conditions-page .conditions-breadcrumb {
+  margin-bottom: 24px;
+  color: var(--conditions-navy);
+}
+.conditions-page .conditions-breadcrumb a,
+.conditions-page .conditions-breadcrumb span[aria-hidden] {
+  color: var(--conditions-cyan);
+}
+.conditions-page .conditions-hero-copy {
+  max-width: 650px;
+}
+.conditions-page .conditions-hero h1 {
+  color: #102e77;
+  font-size: clamp(3.15rem, 4.7vw, 4.15rem);
+  line-height: 1.02;
+  letter-spacing: -.048em;
+  margin-bottom: 17px;
+}
+.conditions-page .conditions-hero h1 span,
+.conditions-page .conditions-section-title span,
+.conditions-page .conditions-symptoms-copy h2 span,
+.conditions-page .conditions-final-cta h2 span {
+  color: var(--conditions-cyan);
+}
+.conditions-page .conditions-hero-copy p {
+  color: #24466f;
+  font-size: 18px;
+  line-height: 1.55;
+}
+.conditions-page .conditions-primary-btn {
+  margin-top: 26px;
+  padding: 15px 29px;
+  background: #2417fa;
+  font-size: 14px;
+}
+.conditions-page .conditions-benefits {
+  gap: clamp(22px, 2.4vw, 38px);
+  max-width: 760px;
+  padding-top: 30px;
+}
+.conditions-page .conditions-benefit {
+  color: #075b99;
+  font-size: 12px;
+  gap: 11px;
+}
+.conditions-page .conditions-benefit .ui-icon-svg {
+  width: 38px;
+  height: 38px;
+  flex-basis: 38px;
+  color: #00b6f1;
+}
+
+.conditions-page .conditions-catalog {
+  padding: 48px 0 50px;
+  background: #fff;
+}
+.conditions-page .conditions-section-title {
+  margin-bottom: 34px;
+  color: #102f72;
+  font-size: clamp(2rem, 3.1vw, 2.55rem);
+}
+.conditions-page .conditions-card-grid {
+  gap: 20px 18px;
+}
+.conditions-page .condition-card {
+  padding: 7px;
+  border-color: #dcecf5;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(6, 57, 105, .055);
+}
+.conditions-page .condition-card > img {
+  height: 235px;
+  border-radius: 9px;
+}
+.conditions-page .condition-card-content {
+  padding: 14px 11px 15px;
+}
+.conditions-page .condition-card h3 {
+  color: #0a3475;
+  font-size: 16px;
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+.conditions-page .condition-card ul {
+  color: #294a72;
+  font-size: 13px;
+  line-height: 1.75;
+}
+.conditions-page .condition-card li:before {
+  background: #08b3e9;
+}
+
+.conditions-page .conditions-symptoms {
+  grid-template-columns: minmax(0, 42%) minmax(0, 58%);
+  min-height: 460px;
+  background-color: #eaf8ff;
+  background-size: cover;
+  background-position: center center;
+  isolation: isolate;
+}
+.conditions-page .conditions-symptoms:after {
+  right: -125px;
+  bottom: -185px;
+  width: 430px;
+  height: 430px;
+  border-color: rgba(75, 184, 225, .22);
+  box-shadow: 0 0 0 28px rgba(225, 247, 255, .35);
+  z-index: -1;
+}
+.conditions-page .conditions-symptoms-copy {
+  justify-content: center;
+  padding: 44px clamp(28px, 5vw, 78px) 42px clamp(22px, 3vw, 46px);
+  background: linear-gradient(90deg, rgba(239, 250, 255, .34), rgba(239, 250, 255, .06));
+}
+.conditions-page .conditions-symptoms-copy h2 {
+  color: #102e72;
+  font-size: clamp(2rem, 2.8vw, 2.55rem);
+  line-height: 1.15;
+  margin-bottom: 30px;
+}
+.conditions-page .conditions-symptoms-copy h2:after {
+  margin: 12px auto 0;
+  width: 48px;
+  background: #08b3e9;
+}
+.conditions-page .symptoms-list-grid {
+  row-gap: 28px;
+  column-gap: 12px;
+}
+.conditions-page .condition-symptom {
+  min-height: 132px;
+  padding: 0 12px;
+  gap: 10px;
+}
+.conditions-page .condition-symptom:not(:nth-child(3n)):after {
+  top: 20px;
+  height: 68px;
+  background: rgba(80, 175, 218, .38);
+}
+.conditions-page .condition-symptom-icon {
+  width: 76px;
+  height: 76px;
+  background: #d9f3fd;
+  border: 1px solid rgba(89, 190, 229, .24);
+  box-shadow: 0 5px 16px rgba(28, 125, 174, .08);
+  color: #0c3c94;
+}
+.conditions-page .condition-symptom-icon .ui-icon-svg {
+  width: 37px;
+  height: 37px;
+}
+.conditions-page .condition-symptom strong {
+  color: #0b2f70;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.conditions-page .conditions-evaluation {
+  padding: 44px 0 42px;
+  background: #fff;
+}
+.conditions-page .conditions-evaluation .conditions-section-title {
+  margin-bottom: 26px;
+  font-size: clamp(1.9rem, 2.7vw, 2.3rem);
+}
+.conditions-page .evaluation-grid {
+  gap: 18px;
+}
+.conditions-page .evaluation-card {
+  min-height: 150px;
+  padding: 14px 12px 15px;
+  border-color: #dcecf5;
+  border-radius: 15px;
+  box-shadow: 0 4px 18px rgba(6, 57, 105, .045);
+}
+.conditions-page .evaluation-number {
+  width: 34px;
+  height: 34px;
+  top: 11px;
+  left: 12px;
+  font-size: 17px;
+}
+.conditions-page .evaluation-card img,
+.conditions-page .evaluation-illustration {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 9px;
+}
+.conditions-page .evaluation-card h3 {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.conditions-page .conditions-final-cta {
+  padding: 40px 0;
+  background: linear-gradient(105deg, #052c5a, #06396f);
+}
+.conditions-page .conditions-cta-inner {
+  gap: 28px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.conditions-page .conditions-final-cta h2 {
+  font-size: clamp(1.55rem, 2.5vw, 2rem);
+  margin-bottom: 7px;
+  letter-spacing: -.03em;
+}
+.conditions-page .conditions-final-cta p {
+  color: #d6e8f6;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.conditions-page .conditions-cta-button {
+  padding: 16px 28px;
+  color: #0b3267;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 1400px) {
+  .conditions-page .conditions-hero,
+  .conditions-page .conditions-hero-inner { min-height: 650px; }
+  .conditions-page .condition-card > img { height: 250px; }
+  .conditions-page .conditions-symptoms,
+  .conditions-page .conditions-symptoms-photo { min-height: 480px; }
+}
+@media (max-width: 1100px) {
+  .conditions-page .conditions-hero,
+  .conditions-page .conditions-hero-inner { min-height: 560px; }
+  .conditions-page .conditions-hero h1 { font-size: clamp(2.8rem, 5vw, 3.5rem); }
+  .conditions-page .conditions-benefits { gap: 20px; max-width: 640px; }
+  .conditions-page .condition-card > img { height: 190px; }
+  .conditions-page .conditions-symptoms,
+  .conditions-page .conditions-symptoms-photo { min-height: 400px; }
+  .conditions-page .conditions-symptoms-copy { padding: 34px 28px; }
+  .conditions-page .condition-symptom-icon { width: 66px; height: 66px; }
+  .conditions-page .condition-symptom-icon .ui-icon-svg { width: 32px; height: 32px; }
+  .conditions-page .condition-symptom strong { font-size: 12px; }
+}
+@media (max-width: 680px) {
+  .conditions-page .conditions-hero,
+  .conditions-page .conditions-hero-inner { min-height: 520px; }
+  .conditions-page .conditions-hero-inner { padding-top: 22px; padding-bottom: 26px; }
+  .conditions-page .conditions-hero-art { background-position: 61% center; }
+  .conditions-page .conditions-hero:after { background: linear-gradient(90deg, rgba(239,249,252,.9) 0%, rgba(239,249,252,.72) 54%, rgba(239,249,252,.18) 100%); }
+  .conditions-page .conditions-breadcrumb { margin-bottom: 20px; }
+  .conditions-page .conditions-hero h1 { font-size: clamp(2.25rem, 9vw, 3rem); }
+  .conditions-page .conditions-hero-copy p { font-size: 14px; max-width: 340px; }
+  .conditions-page .conditions-primary-btn { margin-top: 21px; }
+  .conditions-page .conditions-benefits { gap: 18px 12px; padding-top: 26px; max-width: 390px; display: grid; grid-template-columns: 1fr 1fr; }
+  .conditions-page .conditions-benefit { font-size: 11px; }
+  .conditions-page .conditions-benefit .ui-icon-svg { width: 32px; height: 32px; flex-basis: 32px; }
+  .conditions-page .conditions-catalog { padding: 34px 0 36px; }
+  .conditions-page .conditions-section-title { font-size: 1.8rem; margin-bottom: 24px; }
+  .conditions-page .conditions-card-grid { gap: 16px; }
+  .conditions-page .condition-card > img { height: 175px; }
+  .conditions-page .condition-card h3 { font-size: 14px; }
+  .conditions-page .condition-card ul { font-size: 12px; line-height: 1.65; }
+  .conditions-page .conditions-symptoms { display: block; min-height: 0; background-image: none; background-color: #eaf8ff; }
+  .conditions-page .conditions-symptoms-photo { display: block; visibility: visible; min-height: 0; height: auto; }
+  .conditions-page .conditions-symptoms-photo img { width: 100%; height: auto; min-height: 0; aspect-ratio: 2.1 / 1; object-fit: cover; object-position: left center; }
+  .conditions-page .conditions-symptoms-copy { padding: 32px 5% 36px; background: linear-gradient(135deg, #effaff, #e5f7ff 70%, #f8fcff); }
+  .conditions-page .conditions-symptoms-copy h2 { font-size: 1.75rem; margin-bottom: 25px; }
+  .conditions-page .symptoms-list-grid { row-gap: 22px; column-gap: 6px; }
+  .conditions-page .condition-symptom { min-height: 110px; padding: 0 5px; gap: 8px; }
+  .conditions-page .condition-symptom-icon { width: 58px; height: 58px; }
+  .conditions-page .condition-symptom-icon .ui-icon-svg { width: 29px; height: 29px; }
+  .conditions-page .condition-symptom strong { font-size: 11px; }
+  .conditions-page .conditions-evaluation { padding: 34px 0 36px; }
+  .conditions-page .conditions-evaluation .conditions-section-title { font-size: 1.65rem; margin-bottom: 22px; }
+  .conditions-page .evaluation-grid { gap: 12px; }
+  .conditions-page .evaluation-card { min-height: 130px; padding: 10px 7px; }
+  .conditions-page .evaluation-card img,
+  .conditions-page .evaluation-illustration { width: 60px; height: 60px; }
+  .conditions-page .evaluation-card h3 { font-size: 11px; }
+  .conditions-page .conditions-final-cta { padding: 28px 0 30px; }
+  .conditions-page .conditions-cta-inner { align-items: flex-start; flex-direction: column; gap: 18px; }
+  .conditions-page .conditions-final-cta h2 { font-size: 1.55rem; }
+  .conditions-page .conditions-final-cta p { font-size: 13px; }
+  .conditions-page .conditions-cta-button { padding: 14px 22px; font-size: 13px; }
+}
+
+/* Final layout pass: bring the Conditions page into the same visual rhythm as service pages. */
+.conditions-page {
+  --conditions-navy: #082f6c;
+  --conditions-cyan: #08b5e8;
+  --conditions-purple: #2d1bfa;
+  color: var(--conditions-navy);
+}
+
+.conditions-page .conditions-hero,
+.conditions-page .conditions-hero-inner {
+  min-height: 590px;
+}
+.conditions-page .conditions-hero {
+  background: #eaf7fc;
+}
+.conditions-page .conditions-hero-art {
+  background-position: center center;
+  background-size: cover;
+}
+.conditions-page .conditions-hero:after {
+  background: linear-gradient(90deg,
+    rgba(239, 249, 253, .98) 0%,
+    rgba(239, 249, 253, .93) 32%,
+    rgba(239, 249, 253, .68) 47%,
+    rgba(239, 249, 253, .10) 67%,
+    rgba(239, 249, 253, 0) 100%);
+}
+.conditions-page .conditions-hero-inner {
+  width: min(1420px, 92%);
+  padding-top: 34px;
+  padding-bottom: 32px;
+}
+.conditions-page .conditions-breadcrumb {
+  font-size: 14px;
+  margin-bottom: 26px;
+  gap: 9px;
+}
+.conditions-page .conditions-hero-copy {
+  max-width: 760px;
+  width: min(58%, 760px);
+}
+.conditions-page .conditions-hero h1 {
+  font-size: clamp(3rem, 4.1vw, 4rem);
+  line-height: 1.04;
+  letter-spacing: -.045em;
+  margin-bottom: 18px;
+}
+.conditions-page .conditions-hero h1 span {
+  display: inline;
+  white-space: nowrap;
+}
+.conditions-page .conditions-hero-copy p {
+  max-width: 560px;
+  font-size: 18px;
+  line-height: 1.55;
+}
+.conditions-page .conditions-primary-btn {
+  margin-top: 25px;
+  padding: 15px 29px;
+  background: var(--conditions-purple);
+  font-size: 14px;
+}
+.conditions-page .conditions-benefits {
+  gap: clamp(20px, 2.2vw, 38px);
+  max-width: 790px;
+  padding-top: 28px;
+}
+.conditions-page .conditions-benefit {
+  font-size: 12px;
+  gap: 10px;
+  color: #075b99;
+}
+.conditions-page .conditions-benefit .ui-icon-svg {
+  width: 38px;
+  height: 38px;
+  flex-basis: 38px;
+  stroke-width: 1.7;
+}
+
+.conditions-page .conditions-catalog {
+  padding: 48px 0 54px;
+}
+.conditions-page .conditions-section-title {
+  margin-bottom: 34px;
+  font-size: clamp(2rem, 3vw, 2.5rem);
+}
+.conditions-page .conditions-card-grid {
+  gap: 20px 18px;
+}
+.conditions-page .condition-card {
+  padding: 8px;
+  border-radius: 15px;
+  border-color: #dcecf5;
+  box-shadow: 0 5px 20px rgba(6, 57, 105, .055);
+}
+.conditions-page .condition-card > img {
+  height: 225px;
+  border-radius: 9px;
+}
+.conditions-page .condition-card-content {
+  padding: 14px 11px 15px;
+}
+.conditions-page .condition-card h3 {
+  font-size: 16px;
+  line-height: 1.35;
+  margin-bottom: 9px;
+}
+.conditions-page .condition-card ul {
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.conditions-page .conditions-symptoms {
+  min-height: 460px;
+  grid-template-columns: minmax(0, 42%) minmax(0, 58%);
+  background-position: center center;
+  background-size: cover;
+}
+.conditions-page .conditions-symptoms-photo,
+.conditions-page .conditions-symptoms-photo img {
+  min-height: 460px;
+}
+.conditions-page .conditions-symptoms-copy {
+  padding: 42px clamp(28px, 4.5vw, 70px) 42px clamp(22px, 3vw, 46px);
+  background: linear-gradient(90deg, rgba(239,250,255,.40), rgba(239,250,255,.08));
+}
+.conditions-page .conditions-symptoms-copy h2 {
+  font-size: clamp(1.9rem, 2.6vw, 2.45rem);
+  line-height: 1.16;
+  margin-bottom: 28px;
+}
+.conditions-page .symptoms-list-grid {
+  row-gap: 24px;
+  column-gap: 10px;
+}
+.conditions-page .condition-symptom {
+  min-height: 126px;
+  padding: 0 10px;
+  gap: 10px;
+}
+.conditions-page .condition-symptom:not(:nth-child(3n)):after {
+  top: 19px;
+  height: 65px;
+}
+.conditions-page .condition-symptom-icon {
+  width: 72px;
+  height: 72px;
+  flex: 0 0 72px;
+  background: #d9f3fd;
+}
+.conditions-page .condition-symptom-icon .ui-icon-svg {
+  width: 35px;
+  height: 35px;
+}
+.conditions-page .condition-symptom strong {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.conditions-page .conditions-evaluation {
+  padding: 44px 0 42px;
+}
+.conditions-page .conditions-evaluation .conditions-section-title {
+  font-size: clamp(1.9rem, 2.6vw, 2.3rem);
+  margin-bottom: 26px;
+}
+.conditions-page .evaluation-grid {
+  gap: 18px;
+}
+.conditions-page .evaluation-card {
+  min-height: 158px;
+  padding: 14px 12px 16px;
+  border-radius: 15px;
+  border-color: #dcecf5;
+  box-shadow: 0 4px 18px rgba(6, 57, 105, .045);
+}
+.conditions-page .evaluation-number {
+  width: 34px;
+  height: 34px;
+  top: 11px;
+  left: 12px;
+  font-size: 16px;
+}
+.conditions-page .evaluation-illustration {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 10px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #def5fd;
+  color: #083b91;
+}
+.conditions-page .evaluation-illustration .ui-icon-svg {
+  width: 38px;
+  height: 38px;
+  stroke-width: 1.7;
+}
+.conditions-page .evaluation-card h3 {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.conditions-page .conditions-final-cta {
+  padding: 36px 0 38px;
+  background: linear-gradient(105deg, #062a60 0%, #063b76 100%);
+}
+.conditions-page .conditions-cta-inner {
+  gap: 32px;
+}
+.conditions-page .conditions-final-cta h2 {
+  font-size: clamp(1.6rem, 2.4vw, 2rem);
+  margin-bottom: 8px;
+}
+.conditions-page .conditions-final-cta p {
+  font-size: 15px;
+  line-height: 1.55;
+}
+.conditions-page .conditions-cta-button {
+  min-height: 54px;
+  padding: 16px 30px;
+  font-size: 14px;
+}
+
+@media (min-width: 1400px) {
+  .conditions-page .conditions-hero,
+  .conditions-page .conditions-hero-inner { min-height: 665px; }
+  .conditions-page .condition-card > img { height: 245px; }
+  .conditions-page .conditions-symptoms,
+  .conditions-page .conditions-symptoms-photo,
+  .conditions-page .conditions-symptoms-photo img { min-height: 490px; }
+}
+@media (max-width: 1100px) {
+  .conditions-page .conditions-hero,
+  .conditions-page .conditions-hero-inner { min-height: 560px; }
+  .conditions-page .conditions-hero-copy { width: 62%; }
+  .conditions-page .conditions-hero h1 { font-size: clamp(2.7rem, 5vw, 3.5rem); }
+  .conditions-page .conditions-hero h1 span { white-space: normal; }
+  .conditions-page .conditions-hero:after {
+    background: linear-gradient(90deg, rgba(239,249,253,.98) 0%, rgba(239,249,253,.9) 42%, rgba(239,249,253,.42) 65%, rgba(239,249,253,.03) 100%);
+  }
+  .conditions-page .conditions-benefits { max-width: 680px; gap: 18px; }
+  .conditions-page .condition-card > img { height: 190px; }
+  .conditions-page .conditions-symptoms,
+  .conditions-page .conditions-symptoms-photo,
+  .conditions-page .conditions-symptoms-photo img { min-height: 410px; }
+  .conditions-page .conditions-symptoms-copy { padding: 32px 24px; }
+  .conditions-page .condition-symptom-icon { width: 64px; height: 64px; flex-basis: 64px; }
+}
+@media (max-width: 680px) {
+  .conditions-page .conditions-hero,
+  .conditions-page .conditions-hero-inner { min-height: 570px; }
+  .conditions-page .conditions-hero-inner { padding-top: 22px; padding-bottom: 25px; }
+  .conditions-page .conditions-hero-art { background-position: 63% center; }
+  .conditions-page .conditions-hero:after {
+    background: linear-gradient(90deg, rgba(239,249,253,.98) 0%, rgba(239,249,253,.89) 58%, rgba(239,249,253,.36) 100%);
+  }
+  .conditions-page .conditions-breadcrumb { margin-bottom: 22px; }
+  .conditions-page .conditions-hero-copy { width: 100%; max-width: 440px; }
+  .conditions-page .conditions-hero h1 { font-size: clamp(2.35rem, 9vw, 3.1rem); }
+  .conditions-page .conditions-hero h1 span { white-space: normal; }
+  .conditions-page .conditions-hero-copy p { font-size: 14px; max-width: 330px; }
+  .conditions-page .conditions-primary-btn { margin-top: 21px; }
+  .conditions-page .conditions-benefits { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 12px; max-width: 400px; padding-top: 26px; }
+  .conditions-page .conditions-benefit { font-size: 11px; gap: 8px; }
+  .conditions-page .conditions-benefit .ui-icon-svg { width: 31px; height: 31px; flex-basis: 31px; }
+  .conditions-page .conditions-catalog { padding: 34px 0 38px; }
+  .conditions-page .conditions-section-title { font-size: 1.8rem; margin-bottom: 24px; }
+  .conditions-page .conditions-card-grid { grid-template-columns: 1fr; gap: 16px; }
+  .conditions-page .condition-card > img { height: auto; aspect-ratio: 1.7 / 1; }
+  .conditions-page .condition-card h3 { font-size: 15px; }
+  .conditions-page .condition-card ul { font-size: 12px; }
+  .conditions-page .conditions-symptoms { display: block; min-height: 0; background-image: none; }
+  .conditions-page .conditions-symptoms-photo { display: block; visibility: visible; min-height: 0; height: auto; }
+  .conditions-page .conditions-symptoms-photo img { width: 100%; min-height: 0; height: auto; aspect-ratio: 1.65 / 1; object-fit: cover; object-position: left center; }
+  .conditions-page .conditions-symptoms-copy { padding: 32px 5% 36px; background: linear-gradient(135deg, #effaff, #e5f7ff 70%, #f8fcff); }
+  .conditions-page .conditions-symptoms-copy h2 { font-size: 1.75rem; margin-bottom: 24px; }
+  .conditions-page .symptoms-list-grid { row-gap: 20px; column-gap: 6px; }
+  .conditions-page .condition-symptom { min-height: 110px; padding: 0 4px; gap: 8px; }
+  .conditions-page .condition-symptom-icon { width: 58px; height: 58px; flex-basis: 58px; }
+  .conditions-page .condition-symptom-icon .ui-icon-svg { width: 29px; height: 29px; }
+  .conditions-page .condition-symptom strong { font-size: 11px; }
+  .conditions-page .conditions-evaluation { padding: 34px 0 36px; }
+  .conditions-page .conditions-evaluation .conditions-section-title { font-size: 1.65rem; margin-bottom: 22px; }
+  .conditions-page .evaluation-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .conditions-page .evaluation-card { min-height: 140px; padding: 12px 7px; }
+  .conditions-page .evaluation-illustration { width: 60px; height: 60px; }
+  .conditions-page .evaluation-illustration .ui-icon-svg { width: 32px; height: 32px; }
+  .conditions-page .evaluation-card h3 { font-size: 11px; }
+  .conditions-page .conditions-final-cta { padding: 28px 0 30px; }
+  .conditions-page .conditions-cta-inner { align-items: flex-start; flex-direction: column; gap: 18px; }
+  .conditions-page .conditions-final-cta h2 { font-size: 1.55rem; }
+  .conditions-page .conditions-final-cta p { font-size: 13px; }
+  .conditions-page .conditions-cta-button { padding: 14px 22px; font-size: 13px; }
+}
+
+/* Focused layout correction: reduce excess hero gap and give condition imagery more height.
+   Keep the existing hero background, colors, and all other section styling unchanged. */
+@media (min-width: 1101px) {
+  .conditions-page .conditions-hero,
+  .conditions-page .conditions-hero-inner {
+    min-height: 520px;
+  }
+  .conditions-page .conditions-hero-inner {
+    padding-top: 28px;
+    padding-bottom: 30px;
+  }
+  .conditions-page .conditions-benefits {
+    margin-top: 66px;
+    padding-top: 0;
+  }
+  .conditions-page .condition-card > img {
+    height: 250px;
+  }
+}
+@media (min-width: 1400px) {
+  .conditions-page .conditions-hero,
+  .conditions-page .conditions-hero-inner {
+    min-height: 540px;
+  }
+  .conditions-page .condition-card > img {
+    height: 270px;
+  }
+}
+@media (max-width: 1100px) and (min-width: 681px) {
+  .conditions-page .conditions-hero,
+  .conditions-page .conditions-hero-inner {
+    min-height: 500px;
+  }
+  .conditions-page .conditions-benefits {
+    margin-top: 48px;
+    padding-top: 0;
+  }
+  .conditions-page .condition-card > img {
+    height: 205px;
+  }
+}
