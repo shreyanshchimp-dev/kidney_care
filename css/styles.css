@@ -771,3 +771,47 @@ footer#footer .footer-map-link {
   line-height: 1.5;
 }
 footer#footer .footer-map-link:hover { color: var(--teal); }
+
+
+/* Active navigation state: clear but restrained, matching the existing teal palette. */
+.navlinks > a[aria-current="page"],
+.nav-dropdown-toggle[aria-current="page"],
+.nav-dropdown-toggle.service-nav-active {
+  color: var(--teal);
+  position: relative;
+}
+.navlinks > a[aria-current="page"]::after,
+.nav-dropdown-toggle[aria-current="page"]::after,
+.nav-dropdown-toggle.service-nav-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -9px;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+}
+.nav-dropdown-menu a[aria-current="page"] {
+  color: var(--teal);
+  background: #eaf7fb;
+  font-weight: 800;
+}
+
+/* Social links in the top utility bar and beneath the footer brand description. */
+.topbar-socials { display:flex; align-items:center; gap:10px; margin-left:2px; padding-left:16px; border-left:1px solid rgba(255,255,255,.28); }
+.topbar-socials a { display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; color:#fff; border-radius:50%; transition:background-color .18s ease, transform .18s ease; }
+.topbar-socials a:hover, .topbar-socials a:focus-visible { color:#fff; background:rgba(255,255,255,.18); transform:translateY(-1px); outline:none; }
+.topbar-socials .ui-icon-svg { width:15px; height:15px; stroke-width:1.9; }
+.footer-socials { display:flex; align-items:center; gap:10px; margin-top:16px; }
+.footer-socials a { display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; margin:0; border:1px solid #d7e8ed; border-radius:50%; color:var(--navy); background:#f4fbfc; transition:background-color .18s ease, color .18s ease, border-color .18s ease, transform .18s ease; }
+.footer-socials a:hover, .footer-socials a:focus-visible { color:#fff; background:var(--navy); border-color:var(--navy); transform:translateY(-2px); outline:none; }
+.footer-socials .ui-icon-svg { width:17px; height:17px; stroke-width:1.9; }
+@media (max-width:680px) {
+  .topbar-inner { justify-content:center; }
+  .topbar-socials { border-left:0; padding-left:0; margin-left:3px; }
+  .navlinks > a[aria-current="page"]::after,
+  .nav-dropdown-toggle[aria-current="page"]::after,
+  .nav-dropdown-toggle.service-nav-active::after { display:none; }
+  .navlinks > a[aria-current="page"], .nav-dropdown-toggle[aria-current="page"] { background:#eaf7fb; border-radius:7px; padding-left:10px; padding-right:10px; }
+}
