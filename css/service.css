@@ -580,7 +580,7 @@
 }
 .female-paediatric-page .service-symptoms > .container.symptoms-grid {
   max-width: 1200px;
-  margin-inline: auto;
+  margin-inline: 100px;
   padding-left: 0;
   padding-right: 0;
 }
@@ -748,6 +748,13 @@
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
+.female-paediatric-page .service-symptoms {
+  background-image: url("../assets/Common\ Symptoms\ 3rd\ section.webp") !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
 .urethral-care-page .service-symptoms::before {
   background: linear-gradient(90deg, rgba(234,247,251,.98) 0%, rgba(234,247,251,.96) 48%, rgba(234,247,251,.18) 72%, rgba(234,247,251,0) 100%) !important;
 }
